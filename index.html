@@ -1,0 +1,1476 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>재미 원칙 × 숏폼 시각 하이재킹 리서치</title>
+<meta name="description" content="2026-05-16 fun/short-form visual hijacking research — mobile-first complete report.">
+<meta property="og:title" content="재미 원칙 × 숏폼 시각 하이재킹 리서치">
+<meta property="og:description" content="요약 누락 없이 전체 리서치를 모바일에서 읽기 쉽게 재구성한 보고서.">
+<style>
+:root{--bg:#090807;--surface:#14110f;--card:#1f1914;--line:#34271d;--text:#fff7ed;--muted:#b9a99a;--orange:#ff6a00;--gold:#ffd166;--blue:#7dd3fc;--red:#fb7185;--green:#8bd450;}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 20% 0%,rgba(255,106,0,.24),transparent 34%),linear-gradient(180deg,#090807 0%,#120d09 44%,#090807 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+a{color:var(--gold)} .wrap{width:min(100%,520px);margin:0 auto;padding:0 16px 96px} .hero{min-height:92svh;padding:44px 0 24px;display:flex;flex-direction:column;justify-content:space-between;gap:28px} .eyebrow{display:inline-flex;gap:8px;align-items:center;width:max-content;border:1px solid rgba(255,106,0,.45);background:rgba(255,106,0,.12);color:var(--gold);border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800;letter-spacing:.02em} h1{font-size:clamp(42px,13vw,68px);line-height:.92;margin:18px 0 12px;letter-spacing:-.075em} .subtitle{font-size:18px;color:#f6d7bd;margin:0;word-break:keep-all} .hero-punch{margin-top:24px;border:1px solid rgba(255,209,102,.35);background:linear-gradient(135deg,rgba(255,106,0,.2),rgba(255,209,102,.08));border-radius:28px;padding:20px;box-shadow:0 20px 80px rgba(0,0,0,.35)} .hero-punch b{display:block;font-size:28px;line-height:1.05;letter-spacing:-.04em} .meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px} .meta{border:1px solid var(--line);background:rgba(31,25,20,.78);border-radius:18px;padding:12px} .meta small{display:block;color:var(--muted);font-size:11px} .meta strong{font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:13px} .sticky{position:sticky;top:0;z-index:50;margin:0 -16px;padding:10px 16px;background:rgba(9,8,7,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07);overflow-x:auto;white-space:nowrap} .sticky a{display:inline-block;text-decoration:none;color:#ffe7cf;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:8px 11px;margin-right:6px;font-size:12px;font-weight:800} section{scroll-margin-top:62px} .section-title{font-size:31px;line-height:1.05;margin:44px 0 14px;letter-spacing:-.055em} .kicker{color:var(--orange);font-family:"SF Mono",ui-monospace,Menlo,monospace;font-weight:900;font-size:12px;text-transform:uppercase} .cards{display:grid;gap:12px} .card{border:1px solid var(--line);background:linear-gradient(180deg,rgba(31,25,20,.94),rgba(20,17,15,.96));border-radius:26px;padding:18px;box-shadow:0 16px 44px rgba(0,0,0,.25)} .card .label{color:var(--muted);font-size:12px;font-weight:900} .card h3{font-size:25px;line-height:1.08;margin:8px 0;letter-spacing:-.045em} .card p{margin:0;color:#ead9ca} .formula{display:grid;gap:10px;counter-reset:step} .step{position:relative;border-left:3px solid var(--orange);background:rgba(255,106,0,.08);padding:14px 14px 14px 18px;border-radius:0 18px 18px 0} .step::before{counter-increment:step;content:counter(step);position:absolute;left:-13px;top:12px;width:24px;height:24px;border-radius:50%;background:var(--orange);color:#160b03;display:grid;place-items:center;font-weight:1000;font-size:13px} .frames{display:grid;grid-template-columns:1fr;gap:14px} .frame-card{margin:0;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:#120f0d} .frame-card img{width:100%;display:block} .frame-card figcaption{padding:10px 12px;color:var(--muted);font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:12px} .full-report,.source-block{border:1px solid var(--line);background:rgba(20,17,15,.92);border-radius:26px;padding:18px;margin:14px 0;overflow:hidden} .full-report h1,.source-body h1{font-size:29px;line-height:1.12} .full-report h2,.source-body h2{font-size:25px;line-height:1.16;margin-top:36px;color:#fff1df} .full-report h3,.source-body h3{font-size:20px;line-height:1.2;margin-top:26px;color:#ffd7ad} .full-report h4,.source-body h4{font-size:16px;color:var(--blue)} p,li{font-size:16px} ul{padding-left:20px} li{margin:6px 0} blockquote{border-left:3px solid var(--gold);margin:16px 0;padding:1px 0 1px 14px;color:#ffe2b7;background:rgba(255,209,102,.07)} code{font-family:"SF Mono",ui-monospace,Menlo,monospace;background:rgba(255,255,255,.08);padding:.12em .34em;border-radius:6px;color:#fff0c2;font-size:.9em} pre{overflow:auto;background:#060504;border:1px solid #2f261e;border-radius:16px;padding:14px} .source-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:-18px -18px 14px;padding:14px 18px;background:rgba(255,106,0,.1);border-bottom:1px solid var(--line);font-weight:1000} .source-head a{font-size:12px;text-decoration:none} .source-body{max-height:none} .checklist{list-style:none;padding-left:0} .checklist li{display:flex;gap:9px;align-items:flex-start} .box{width:18px;height:18px;border:2px solid var(--gold);border-radius:5px;flex:0 0 auto;margin-top:3px} .raw{font-size:13px;columns:1} .raw li{word-break:break-all} .footer{color:var(--muted);font-size:12px;margin-top:40px;text-align:center} .callout{border:1px solid rgba(125,211,252,.35);background:rgba(125,211,252,.09);border-radius:22px;padding:16px;margin:16px 0} .callout strong{color:var(--blue)}
+@media (min-width:720px){body::before{content:"모바일 전용 보고서입니다. 폰 폭으로 보는 것을 기준으로 설계했습니다.";position:fixed;right:16px;bottom:16px;max-width:240px;background:rgba(255,106,0,.14);border:1px solid rgba(255,106,0,.35);border-radius:18px;padding:12px;color:#ffd7ad;font-size:12px;z-index:99}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <div>
+    <span class="eyebrow">2026.05.16 · MOBILE REPORT</span>
+    <h1>재미 원칙 ×<br>숏폼 시각<br>하이재킹</h1>
+    <p class="subtitle">디시인사이드 · Reddit · X · 이론 자료 · 무신사 프레임 분석을 전부 녹인 모바일 전용 총체 보고서.</p>
+    <div class="hero-punch"><b>상금 안내가 아니라<br>“고객 영상이 공식 광고로 변하는 이상한 순간”을 팔아라.</b></div>
+  </div>
+  <div class="meta-grid">
+    <div class="meta"><small>Research Window</small><strong>20:17–21:00 KST</strong></div>
+    <div class="meta"><small>Source Policy</small><strong>No omission</strong></div>
+    <div class="meta"><small>Format</small><strong>Mobile only</strong></div>
+    <div class="meta"><small>Core Formula</small><strong>safe wrongness</strong></div>
+  </div>
+</header>
+<nav class="sticky"><a href="#cards">핵심 렌즈</a><a href="#flow">3초 흐름</a><a href="#frames">프레임</a><a href="#full">보고서 전문</a><a href="#sources">소스 전문</a></nav>
+<section id="cards"><div class="kicker">visual briefing</div><h2 class="section-title">읽기 전에 잡을 네 개의 렌즈</h2><div class="cards"><article class="card"><div class="label">재미의 핵심</div><h3>안전한 예측 위반 + 해결 가능한 정보 격차</h3><p>예상 A를 깔고 결과 B를 보여주되, 위협은 안전하게 낮춘다.</p></article><article class="card"><div class="label">첫 3초 구조</div><h3>질문 → 미니 반전 → 증거</h3><p>0초 충돌, 1.5초 추가 이상함, 3초 실제 보상/숫자.</p></article><article class="card"><div class="label">시각 하이재킹</div><h3>고대비보다 맥락 오류</h3><p>밝은 색만이 아니라 “왜 저게 저기 있어?”가 시선을 붙잡는다.</p></article><article class="card"><div class="label">무신사 전략</div><h3>상금 안내 말고 공식 광고로 변하는 순간</h3><p>07을 첫 프레임 뼈대로, 08/12는 후반 증명·절차, 09–11은 상세 페이지로.</p></article></div></section>
+<section id="flow"><div class="kicker">0–3s architecture</div><h2 class="section-title">숏폼 첫 3초 설계</h2><div class="formula"><div class="step"><strong>0.0초</strong><br>익숙한 장면 안에 말 안 되는 물체/상태를 둔다.</div><div class="step"><strong>0.3초</strong><br>7–12자 텍스트로 질문·모순·숫자 하나만 박는다.</div><div class="step"><strong>1.5초</strong><br>두 번째 이상함/확대/반전을 넣어 궁금증을 연장한다.</div><div class="step"><strong>3.0초</strong><br>실제 증거·숫자·전후비교로 첫 보상을 준다.</div></div><div class="callout"><strong>검증 문장:</strong> 시청자가 “다 봐야 이해됨”이 아니라 “조금만 더 보면 풀림”을 느껴야 한다.</div></section>
+<section id="frames"><div class="kicker">musinsa frame evidence</div><h2 class="section-title">프레임 샘플 보기</h2><div class="frames"><figure class="frame-card"><img src="assets/frame-samples/07.jpg" alt="frame 07"><figcaption>Frame 07</figcaption></figure>
+<figure class="frame-card"><img src="assets/frame-samples/08.jpg" alt="frame 08"><figcaption>Frame 08</figcaption></figure>
+<figure class="frame-card"><img src="assets/frame-samples/09.jpg" alt="frame 09"><figcaption>Frame 09</figcaption></figure>
+<figure class="frame-card"><img src="assets/frame-samples/10.jpg" alt="frame 10"><figcaption>Frame 10</figcaption></figure>
+<figure class="frame-card"><img src="assets/frame-samples/11.jpg" alt="frame 11"><figcaption>Frame 11</figcaption></figure>
+<figure class="frame-card"><img src="assets/frame-samples/12.jpg" alt="frame 12"><figcaption>Frame 12</figcaption></figure></div></section>
+<section id="full"><div class="kicker">complete report</div><h2 class="section-title">총체 보고서 전문</h2><article class="full-report"><h1 id="2026-05-16-재미-원칙-숏폼-시각-하이재킹-리서치">2026-05-16 재미 원칙 + 숏폼 시각 하이재킹 리서치</h1>
+
+<h2 id="0-작업-방식">0) 작업 방식</h2>
+<ul>
+<li>요청 시각 20:17 KST 기준으로 물리 시간 체크 코드를 만들고, 각 수집/정리 블록 끝에 <code>date &#x27;+%H:%M:%S %Z&#x27;</code> 또는 loop stdout을 확인했다.</li>
+<li>백그라운드 루프: <code>tools/community_research_loop_until_21.py</code> — 21:00까지 3분마다 KST와 phase를 출력하며 DCInside 검색 수집.</li>
+<li>20:30 이전은 재미 원칙, 20:30 이후는 시각/숏폼 훅 중심으로 전환.</li>
+</ul>
+
+<h2 id="1-인간이-재미-를-느끼는-핵심-원칙">1) 인간이 “재미”를 느끼는 핵심 원칙</h2>
+
+<h3 id="1-예측-위반-뇌가-예상한-다음-장면을-배신한다">1. 예측 위반: 뇌가 예상한 다음 장면을 배신한다</h3>
+<p>재미는 대체로 “내가 알던 규칙이 깨짐”에서 시작한다. Reddit 유머/스탠드업 쪽에서도 incongruity, premise/punchline order, assumption shatter가 반복됐다.</p>
+
+<p>적용:</p>
+<ul>
+<li>평범한 장면을 먼저 보여준다.</li>
+<li>그 장면 안에서 딱 하나만 말이 안 되게 만든다.</li>
+<li>시청자가 “왜 저래?”를 떠올리게 한다.</li>
+</ul>
+
+<h3 id="2-안전한-위반-위험하면-불쾌-너무-안전하면-지루함">2. 안전한 위반: 위험하면 불쾌, 너무 안전하면 지루함</h3>
+<p>Benign violation 관점에서 웃김/재미는 “규칙 위반 + 안전함”의 교차점이다. 무서운 장면도 실제 위협이 아니라는 감각이 있어야 보고 싶어진다.</p>
+
+<p>적용:</p>
+<ul>
+<li>금기/위반을 쓰되 브랜드·인물·사회적 위험은 낮춘다.</li>
+<li>제품/상황/문서/AI/광고 형식 같은 안전한 대상을 망가뜨리는 쪽이 좋다.</li>
+</ul>
+
+<h3 id="3-해결-가능한-정보-격차-어려운-수수께끼가-아니라-조금만-보면-풀릴-것-같은-틈">3. 해결 가능한 정보 격차: 어려운 수수께끼가 아니라 “조금만 보면 풀릴 것 같은” 틈</h3>
+<p>Reddit NewTubers 훅 분석에서 공통적으로 “첫 3초에 설명하지 말고 질문을 만들라”는 말이 반복됐다. 다만 너무 모호하면 이탈한다.</p>
+
+<p>적용:</p>
+<ul>
+<li>“이게 뭐지?”는 좋다.</li>
+<li>“뭔 소리야?”는 나쁘다.</li>
+<li>질문은 1개만 둔다.</li>
+</ul>
+
+<h3 id="4-긴장-완화-재긴장-리듬">4. 긴장-완화-재긴장 리듬</h3>
+<p>릴스/쇼츠에서는 0–1초 훅만으로 부족하고, 2–4초에 micro-escalation이 필요하다는 커뮤니티 의견이 있었다. 궁금증이 너무 빨리 해소되면 바로 스와이프된다.</p>
+
+<p>적용:</p>
+<ul>
+<li>0초: 이상한 첫 장면</li>
+<li>1.5초: “근데 더 이상함”</li>
+<li>3초: 첫 증거/보상</li>
+<li>5초: 설명 시작</li>
+</ul>
+
+<h3 id="5-사회적-인식-이거-내-얘기다-나만-알아챘다">5. 사회적 인식: “이거 내 얘기다 / 나만 알아챘다”</h3>
+<p>SocialMediaMarketing 쪽 1000+ hooks 분석 글에서 hyper-specificity와 POV-as-scenario가 강하게 언급됐다. 너무 일반적인 훅보다 “몰래 바지 단추 푼 적 있는 사람”처럼 특정 경험을 찌르는 문장이 강하다.</p>
+
+<p>적용:</p>
+<ul>
+<li>모두를 부르지 말고 한 사람의 상황을 찌른다.</li>
+<li>템플릿 POV는 피하고, 실제 관찰처럼 써야 한다.</li>
+</ul>
+
+<h2 id="2-숏폼에서-시각을-하이재킹하는-노하우">2) 숏폼에서 시각을 하이재킹하는 노하우</h2>
+
+<h3 id="1-첫-프레임은-설명이-아니라-충돌-이어야-한다">1. 첫 프레임은 설명이 아니라 “충돌”이어야 한다</h3>
+<p>첫 화면에 로고/안내/긴 제목을 두면 늦다. 첫 프레임은 시청자가 해석해야 하는 시각적 충돌이어야 한다.</p>
+
+<p>좋은 첫 프레임:</p>
+<ul>
+<li>익숙한 물체 + 불가능한 상태</li>
+<li>큰 돈/위험/금지/결과가 한눈에 보임</li>
+<li>얼굴/손/물체 중 하나가 화면의 주인공</li>
+</ul>
+
+<p>나쁜 첫 프레임:</p>
+<ul>
+<li>참가 방법 안내</li>
+<li>심사 기준/주의 사항</li>
+<li>긴 문장 3줄 이상</li>
+</ul>
+
+<h3 id="2-시각-salience-색-대비만이-아니라-전체-구도에서-어디를-봐야-하는지">2. 시각 salience = 색 대비만이 아니라 “전체 구도에서 어디를 봐야 하는지”</h3>
+<p>시각주의 연구에서는 색/밝기/채도 같은 bottom-up 요인뿐 아니라 과제·동기·감정 같은 top-down 요인도 작동한다. 즉, 네온 컬러만 넣는다고 되는 게 아니라 “왜 저걸 봐야 하는지”가 구도 안에 있어야 한다.</p>
+
+<p>실행 규칙:</p>
+<ul>
+<li>화면 안 주인공 1개만 둔다.</li>
+<li>나머지는 과감히 죽인다.</li>
+<li>가장 중요한 대상은 크기/밝기/위치 중 2개 이상으로 밀어준다.</li>
+</ul>
+
+<h3 id="3-의미론적-이상함이-단순-고대비보다-오래-붙잡는다">3. 의미론적 이상함이 단순 고대비보다 오래 붙잡는다</h3>
+<p>X/Reddit 둘 다 “bold visual”을 말하지만, 실제로 강한 건 밝은 색보다 “맥락 오류”다.</p>
+
+<p>예:</p>
+<ul>
+<li>평범한 방인데 옷장 안에 무대 조명이 있음</li>
+<li>쇼핑몰 쿠폰이 현금처럼 날아감</li>
+<li>심사표가 갑자기 게임 랭킹처럼 바뀜</li>
+</ul>
+
+<h3 id="4-컷-빈도보다-새-정보-빈도">4. 컷 빈도보다 “새 정보 빈도”</h3>
+<p>X에서는 1–3초마다 컷, 1–2초 jump cut 같은 말이 반복됐다. 하지만 r/editors 검색 결과에서는 retention editing/jump cut을 두고 장인성 vs 게으름 논쟁도 보인다. 결론: 컷 자체가 아니라 매 컷마다 새 정보가 있어야 한다.</p>
+
+<p>체크 질문:</p>
+<ul>
+<li>이 컷이 새 정보를 주는가?</li>
+<li>아니면 같은 말을 다른 각도로 반복하는가?</li>
+</ul>
+
+<h3 id="5-첫-3초-안에-질문-미니-반전-증거-를-넣는다">5. 첫 3초 안에 “질문 → 미니 반전 → 증거”를 넣는다</h3>
+<p>커뮤니티에서 반복된 훅 패턴을 시각화하면 다음 순서가 가장 안전하다.</p>
+
+<ul>
+<li>0.0s: 눈에 박히는 이상한 장면</li>
+<li>0.3s: 7–12자 텍스트</li>
+<li>1.5s: 두 번째 이상함/확대/반전</li>
+<li>3.0s: 실제 증거/숫자/전후비교</li>
+</ul>
+
+<h3 id="6-Viewed-vs-swiped-away와-retention을-분리해서-봐야-한다">6. Viewed vs swiped-away와 retention을 분리해서 봐야 한다</h3>
+<p>Reddit youtubers 쪽에서는 viewed/swiped-away를 쇼츠의 CTR처럼 다뤘다. 하지만 높은 viewed 비율과 높은 평균 시청률이 있어도 YouTube가 덜 밀어주는 사례도 있었다. 첫 프레임은 필요조건이지 충분조건은 아니다.</p>
+
+<p>분리:</p>
+<ul>
+<li>Viewed vs swiped-away: 첫 화면/첫 1초/주제 매칭</li>
+<li>Retention/APV: 중간 pacing/보상 간격</li>
+<li>확산: 댓글·공유·재시청·시청자군 매칭</li>
+</ul>
+
+<h2 id="3-커뮤니티별-신호">3) 커뮤니티별 신호</h2>
+
+<h3 id="Reddit">Reddit</h3>
+<p>가장 신호가 좋았다. 특히 r/NewTubers, r/SocialMediaMarketing, r/socialmedia, r/youtubers.</p>
+<ul>
+<li>contradiction hook</li>
+<li>oddly specific numbers</li>
+<li>restriction/open loop</li>
+<li>familiar object turned wrong</li>
+<li>real-time framing</li>
+<li>generic POV fatigue</li>
+</ul>
+
+<h3 id="DCInside">DCInside</h3>
+<p>고급 프레임보다 실제 체감이 강했다.</p>
+<ul>
+<li>쇼츠 갤러리는 조회수/피드/알고리즘/이탈/광고 불만 중심.</li>
+<li>“절대 음원을 누르지 마세요” 같은 제목은 금지형 curiosity hook으로 바로 쓸 수 있다.</li>
+<li>“의미없이 대충 만들수록 조회수가 높다” 류의 불만은 퀄리티보다 feed-fit과 첫 반응이 중요하다는 신호.</li>
+</ul>
+
+<h3 id="X">X</h3>
+<p>정보량은 많지만 템플릿/자동화/성장해킹 냄새가 강하다.</p>
+<ul>
+<li>first 2–3 seconds</li>
+<li>bold visual</li>
+<li>visual cut every 1–3 seconds</li>
+<li>captions</li>
+<li>curiosity/shock/question/promise</li>
+</ul>
+
+<p>X는 “형식 목록”으로 쓰고, 진짜 감각은 Reddit/DC에서 검증하는 게 낫다.</p>
+
+<h2 id="4-무신사-광고-프레임-적용">4) 무신사 광고 프레임 적용</h2>
+
+<h3 id="07">07</h3>
+<p>가장 첫 프레임 후보. 검정 배경, 오렌지 3D play icon, 큰 흰색 금액/혜택 텍스트가 즉시 읽힌다. 다만 “시각적 충돌”은 약해서, 더 하이재킹하려면 상금/무진장/공식광고 중 하나를 이상한 물체화하면 좋다.</p>
+
+<p>예: 2,000만원 상금이 유튜브 play button 안에서 쏟아지는 장면.</p>
+
+<h3 id="08">08</h3>
+<p>보상 증명 프레임. 신뢰를 주지만 정보량이 많아 첫 1초용은 아니다. 2–5초 구간에서 “진짜 얼마?”를 보여주는 용도.</p>
+
+<h3 id="09-11">09–11</h3>
+<p>첫 3초에 쓰면 안 된다. 정보는 필요하지만 숏폼 시각 하이재킹에는 법무/규칙/회색 텍스트가 에너지를 죽인다.</p>
+
+<h3 id="12">12</h3>
+<p>절차 설명용으로는 가능. 단, 전체를 한 번에 보여주지 말고 한 step씩 크게 확대해서 “누르는 위치” 중심으로 재구성해야 한다.</p>
+
+<h2 id="5-바로-쓸-수-있는-숏폼-제작-공식">5) 바로 쓸 수 있는 숏폼 제작 공식</h2>
+
+<h3 id="Formula-A-익숙한-물건이-틀어짐">Formula A — 익숙한 물건이 틀어짐</h3>
+<ul>
+<li>0s: 평범한 쿠폰/상품권이 현금다발처럼 날림</li>
+<li>Text: “이게 왜 광고비가 됨?”</li>
+<li>1.5s: 무신사 play icon이 상금 박스로 변함</li>
+<li>3s: “총 2,000만원 + 공식 광고 송출”</li>
+</ul>
+
+<h3 id="Formula-B-금지형-훅">Formula B — 금지형 훅</h3>
+<ul>
+<li>0s: 손가락이 버튼 누르려 함</li>
+<li>Text: “이 버튼 누르면 안 됨”</li>
+<li>1.5s: 버튼 위에 “무신사 공식 광고 제출”</li>
+<li>3s: 누르면 상금/송출/인증서 화면으로 폭발</li>
+</ul>
+
+<h3 id="Formula-C-반전형-훅">Formula C — 반전형 훅</h3>
+<ul>
+<li>0s: “무신사 광고는 브랜드가 만든다?”</li>
+<li>1s: 화면 깨짐</li>
+<li>Text: “이번엔 고객이 만든다”</li>
+<li>3s: 5팀 공식 광고 채택</li>
+</ul>
+
+<h3 id="Formula-D-이상하게-구체적인-숫자">Formula D — 이상하게 구체적인 숫자</h3>
+<ul>
+<li>0s: “227팀 중 5팀만”</li>
+<li>1.5s: 랭킹표가 게임처럼 올라감</li>
+<li>3s: 1등 1,000만원 / 공식 광고 송출</li>
+</ul>
+
+<h2 id="6-최종-결론">6) 최종 결론</h2>
+<p>재미는 “안전한 예측 위반을 시청자가 직접 해결하는 과정”이고, 숏폼 시각 하이재킹은 그 원칙을 첫 3초 안에 압축하는 일이다.</p>
+
+<p>가장 강한 조합은:</p>
+
+<blockquote>
+<p>익숙한 장면 + 말 안 되는 시각 상태 + 이상하게 구체적인 숫자 + 2초 안 미니 반전 + 3초 안 증거</p>
+</blockquote>
+
+<p>반대로 가장 약한 조합은:</p>
+
+<blockquote>
+<p>로고 + 안내 제목 + 긴 설명 + 법무/조건 + 템플릿 POV 문장</p>
+</blockquote>
+
+<p>이번 소재에서는 <strong>07의 고대비/큰 약속을 첫 프레임 뼈대로 쓰되, 08의 보상표와 12의 절차는 뒤로 보내고, 09–11은 숏폼 본편이 아니라 랜딩/상세 페이지로 빼는 것</strong>이 맞다.</p>
+
+<h2 id="7-제작-전-체크리스트">7) 제작 전 체크리스트</h2>
+
+<h3 id="첫-프레임-체크">첫 프레임 체크</h3>
+<ul class="checklist">
+<li><span class="box "></span>1초 무음으로 봐도 주인공이 보이는가?</li>
+<li><span class="box "></span>텍스트가 12자 이내인가?</li>
+<li><span class="box "></span>익숙함과 이상함이 같이 있는가?</li>
+<li><span class="box "></span>로고/규칙/설명부터 시작하지 않는가?</li>
+</ul>
+
+<h3 id="3초-체크">3초 체크</h3>
+<ul class="checklist">
+<li><span class="box "></span>0초에 질문이 생기는가?</li>
+<li><span class="box "></span>1–2초에 새 정보/미니 반전이 있는가?</li>
+<li><span class="box "></span>3초 안에 증거가 하나 나오는가?</li>
+<li><span class="box "></span>시청자가 “다 봐야 이해됨”이 아니라 “조금만 더 보면 풀림”을 느끼는가?</li>
+</ul>
+
+<h3 id="10초-체크">10초 체크</h3>
+<ul class="checklist">
+<li><span class="box "></span>첫 약속이 실제 장면으로 보상되는가?</li>
+<li><span class="box "></span>같은 설명을 반복하지 않는가?</li>
+<li><span class="box "></span>컷마다 정보가 바뀌는가?</li>
+<li><span class="box "></span>공유/댓글거리 하나가 있는가? 예: “이거 진짜 광고로 나감?”</li>
+</ul>
+
+<h2 id="8-한-줄-전략">8) 한 줄 전략</h2>
+<p>무신사 소재는 “상금 안내”가 아니라 <strong>고객 영상이 진짜 공식 광고로 변하는 이상한 순간</strong>을 팔아야 한다.</p></article></section>
+<section id="sources"><div class="kicker">complete source notes</div><h2 class="section-title">수집 노트 전문 — 요약 없이</h2><section class="source-block" id="src-1">
+  <div class="source-head"><span>총체적 보고서</span><a href="data/final-report.md">원문 파일</a></div>
+  <div class="source-body"><h1 id="2026-05-16-재미-원칙-숏폼-시각-하이재킹-리서치">2026-05-16 재미 원칙 + 숏폼 시각 하이재킹 리서치</h1>
+
+<h2 id="0-작업-방식">0) 작업 방식</h2>
+<ul>
+<li>요청 시각 20:17 KST 기준으로 물리 시간 체크 코드를 만들고, 각 수집/정리 블록 끝에 <code>date &#x27;+%H:%M:%S %Z&#x27;</code> 또는 loop stdout을 확인했다.</li>
+<li>백그라운드 루프: <code>tools/community_research_loop_until_21.py</code> — 21:00까지 3분마다 KST와 phase를 출력하며 DCInside 검색 수집.</li>
+<li>20:30 이전은 재미 원칙, 20:30 이후는 시각/숏폼 훅 중심으로 전환.</li>
+</ul>
+
+<h2 id="1-인간이-재미-를-느끼는-핵심-원칙">1) 인간이 “재미”를 느끼는 핵심 원칙</h2>
+
+<h3 id="1-예측-위반-뇌가-예상한-다음-장면을-배신한다">1. 예측 위반: 뇌가 예상한 다음 장면을 배신한다</h3>
+<p>재미는 대체로 “내가 알던 규칙이 깨짐”에서 시작한다. Reddit 유머/스탠드업 쪽에서도 incongruity, premise/punchline order, assumption shatter가 반복됐다.</p>
+
+<p>적용:</p>
+<ul>
+<li>평범한 장면을 먼저 보여준다.</li>
+<li>그 장면 안에서 딱 하나만 말이 안 되게 만든다.</li>
+<li>시청자가 “왜 저래?”를 떠올리게 한다.</li>
+</ul>
+
+<h3 id="2-안전한-위반-위험하면-불쾌-너무-안전하면-지루함">2. 안전한 위반: 위험하면 불쾌, 너무 안전하면 지루함</h3>
+<p>Benign violation 관점에서 웃김/재미는 “규칙 위반 + 안전함”의 교차점이다. 무서운 장면도 실제 위협이 아니라는 감각이 있어야 보고 싶어진다.</p>
+
+<p>적용:</p>
+<ul>
+<li>금기/위반을 쓰되 브랜드·인물·사회적 위험은 낮춘다.</li>
+<li>제품/상황/문서/AI/광고 형식 같은 안전한 대상을 망가뜨리는 쪽이 좋다.</li>
+</ul>
+
+<h3 id="3-해결-가능한-정보-격차-어려운-수수께끼가-아니라-조금만-보면-풀릴-것-같은-틈">3. 해결 가능한 정보 격차: 어려운 수수께끼가 아니라 “조금만 보면 풀릴 것 같은” 틈</h3>
+<p>Reddit NewTubers 훅 분석에서 공통적으로 “첫 3초에 설명하지 말고 질문을 만들라”는 말이 반복됐다. 다만 너무 모호하면 이탈한다.</p>
+
+<p>적용:</p>
+<ul>
+<li>“이게 뭐지?”는 좋다.</li>
+<li>“뭔 소리야?”는 나쁘다.</li>
+<li>질문은 1개만 둔다.</li>
+</ul>
+
+<h3 id="4-긴장-완화-재긴장-리듬">4. 긴장-완화-재긴장 리듬</h3>
+<p>릴스/쇼츠에서는 0–1초 훅만으로 부족하고, 2–4초에 micro-escalation이 필요하다는 커뮤니티 의견이 있었다. 궁금증이 너무 빨리 해소되면 바로 스와이프된다.</p>
+
+<p>적용:</p>
+<ul>
+<li>0초: 이상한 첫 장면</li>
+<li>1.5초: “근데 더 이상함”</li>
+<li>3초: 첫 증거/보상</li>
+<li>5초: 설명 시작</li>
+</ul>
+
+<h3 id="5-사회적-인식-이거-내-얘기다-나만-알아챘다">5. 사회적 인식: “이거 내 얘기다 / 나만 알아챘다”</h3>
+<p>SocialMediaMarketing 쪽 1000+ hooks 분석 글에서 hyper-specificity와 POV-as-scenario가 강하게 언급됐다. 너무 일반적인 훅보다 “몰래 바지 단추 푼 적 있는 사람”처럼 특정 경험을 찌르는 문장이 강하다.</p>
+
+<p>적용:</p>
+<ul>
+<li>모두를 부르지 말고 한 사람의 상황을 찌른다.</li>
+<li>템플릿 POV는 피하고, 실제 관찰처럼 써야 한다.</li>
+</ul>
+
+<h2 id="2-숏폼에서-시각을-하이재킹하는-노하우">2) 숏폼에서 시각을 하이재킹하는 노하우</h2>
+
+<h3 id="1-첫-프레임은-설명이-아니라-충돌-이어야-한다">1. 첫 프레임은 설명이 아니라 “충돌”이어야 한다</h3>
+<p>첫 화면에 로고/안내/긴 제목을 두면 늦다. 첫 프레임은 시청자가 해석해야 하는 시각적 충돌이어야 한다.</p>
+
+<p>좋은 첫 프레임:</p>
+<ul>
+<li>익숙한 물체 + 불가능한 상태</li>
+<li>큰 돈/위험/금지/결과가 한눈에 보임</li>
+<li>얼굴/손/물체 중 하나가 화면의 주인공</li>
+</ul>
+
+<p>나쁜 첫 프레임:</p>
+<ul>
+<li>참가 방법 안내</li>
+<li>심사 기준/주의 사항</li>
+<li>긴 문장 3줄 이상</li>
+</ul>
+
+<h3 id="2-시각-salience-색-대비만이-아니라-전체-구도에서-어디를-봐야-하는지">2. 시각 salience = 색 대비만이 아니라 “전체 구도에서 어디를 봐야 하는지”</h3>
+<p>시각주의 연구에서는 색/밝기/채도 같은 bottom-up 요인뿐 아니라 과제·동기·감정 같은 top-down 요인도 작동한다. 즉, 네온 컬러만 넣는다고 되는 게 아니라 “왜 저걸 봐야 하는지”가 구도 안에 있어야 한다.</p>
+
+<p>실행 규칙:</p>
+<ul>
+<li>화면 안 주인공 1개만 둔다.</li>
+<li>나머지는 과감히 죽인다.</li>
+<li>가장 중요한 대상은 크기/밝기/위치 중 2개 이상으로 밀어준다.</li>
+</ul>
+
+<h3 id="3-의미론적-이상함이-단순-고대비보다-오래-붙잡는다">3. 의미론적 이상함이 단순 고대비보다 오래 붙잡는다</h3>
+<p>X/Reddit 둘 다 “bold visual”을 말하지만, 실제로 강한 건 밝은 색보다 “맥락 오류”다.</p>
+
+<p>예:</p>
+<ul>
+<li>평범한 방인데 옷장 안에 무대 조명이 있음</li>
+<li>쇼핑몰 쿠폰이 현금처럼 날아감</li>
+<li>심사표가 갑자기 게임 랭킹처럼 바뀜</li>
+</ul>
+
+<h3 id="4-컷-빈도보다-새-정보-빈도">4. 컷 빈도보다 “새 정보 빈도”</h3>
+<p>X에서는 1–3초마다 컷, 1–2초 jump cut 같은 말이 반복됐다. 하지만 r/editors 검색 결과에서는 retention editing/jump cut을 두고 장인성 vs 게으름 논쟁도 보인다. 결론: 컷 자체가 아니라 매 컷마다 새 정보가 있어야 한다.</p>
+
+<p>체크 질문:</p>
+<ul>
+<li>이 컷이 새 정보를 주는가?</li>
+<li>아니면 같은 말을 다른 각도로 반복하는가?</li>
+</ul>
+
+<h3 id="5-첫-3초-안에-질문-미니-반전-증거-를-넣는다">5. 첫 3초 안에 “질문 → 미니 반전 → 증거”를 넣는다</h3>
+<p>커뮤니티에서 반복된 훅 패턴을 시각화하면 다음 순서가 가장 안전하다.</p>
+
+<ul>
+<li>0.0s: 눈에 박히는 이상한 장면</li>
+<li>0.3s: 7–12자 텍스트</li>
+<li>1.5s: 두 번째 이상함/확대/반전</li>
+<li>3.0s: 실제 증거/숫자/전후비교</li>
+</ul>
+
+<h3 id="6-Viewed-vs-swiped-away와-retention을-분리해서-봐야-한다">6. Viewed vs swiped-away와 retention을 분리해서 봐야 한다</h3>
+<p>Reddit youtubers 쪽에서는 viewed/swiped-away를 쇼츠의 CTR처럼 다뤘다. 하지만 높은 viewed 비율과 높은 평균 시청률이 있어도 YouTube가 덜 밀어주는 사례도 있었다. 첫 프레임은 필요조건이지 충분조건은 아니다.</p>
+
+<p>분리:</p>
+<ul>
+<li>Viewed vs swiped-away: 첫 화면/첫 1초/주제 매칭</li>
+<li>Retention/APV: 중간 pacing/보상 간격</li>
+<li>확산: 댓글·공유·재시청·시청자군 매칭</li>
+</ul>
+
+<h2 id="3-커뮤니티별-신호">3) 커뮤니티별 신호</h2>
+
+<h3 id="Reddit">Reddit</h3>
+<p>가장 신호가 좋았다. 특히 r/NewTubers, r/SocialMediaMarketing, r/socialmedia, r/youtubers.</p>
+<ul>
+<li>contradiction hook</li>
+<li>oddly specific numbers</li>
+<li>restriction/open loop</li>
+<li>familiar object turned wrong</li>
+<li>real-time framing</li>
+<li>generic POV fatigue</li>
+</ul>
+
+<h3 id="DCInside">DCInside</h3>
+<p>고급 프레임보다 실제 체감이 강했다.</p>
+<ul>
+<li>쇼츠 갤러리는 조회수/피드/알고리즘/이탈/광고 불만 중심.</li>
+<li>“절대 음원을 누르지 마세요” 같은 제목은 금지형 curiosity hook으로 바로 쓸 수 있다.</li>
+<li>“의미없이 대충 만들수록 조회수가 높다” 류의 불만은 퀄리티보다 feed-fit과 첫 반응이 중요하다는 신호.</li>
+</ul>
+
+<h3 id="X">X</h3>
+<p>정보량은 많지만 템플릿/자동화/성장해킹 냄새가 강하다.</p>
+<ul>
+<li>first 2–3 seconds</li>
+<li>bold visual</li>
+<li>visual cut every 1–3 seconds</li>
+<li>captions</li>
+<li>curiosity/shock/question/promise</li>
+</ul>
+
+<p>X는 “형식 목록”으로 쓰고, 진짜 감각은 Reddit/DC에서 검증하는 게 낫다.</p>
+
+<h2 id="4-무신사-광고-프레임-적용">4) 무신사 광고 프레임 적용</h2>
+
+<h3 id="07">07</h3>
+<p>가장 첫 프레임 후보. 검정 배경, 오렌지 3D play icon, 큰 흰색 금액/혜택 텍스트가 즉시 읽힌다. 다만 “시각적 충돌”은 약해서, 더 하이재킹하려면 상금/무진장/공식광고 중 하나를 이상한 물체화하면 좋다.</p>
+
+<p>예: 2,000만원 상금이 유튜브 play button 안에서 쏟아지는 장면.</p>
+
+<h3 id="08">08</h3>
+<p>보상 증명 프레임. 신뢰를 주지만 정보량이 많아 첫 1초용은 아니다. 2–5초 구간에서 “진짜 얼마?”를 보여주는 용도.</p>
+
+<h3 id="09-11">09–11</h3>
+<p>첫 3초에 쓰면 안 된다. 정보는 필요하지만 숏폼 시각 하이재킹에는 법무/규칙/회색 텍스트가 에너지를 죽인다.</p>
+
+<h3 id="12">12</h3>
+<p>절차 설명용으로는 가능. 단, 전체를 한 번에 보여주지 말고 한 step씩 크게 확대해서 “누르는 위치” 중심으로 재구성해야 한다.</p>
+
+<h2 id="5-바로-쓸-수-있는-숏폼-제작-공식">5) 바로 쓸 수 있는 숏폼 제작 공식</h2>
+
+<h3 id="Formula-A-익숙한-물건이-틀어짐">Formula A — 익숙한 물건이 틀어짐</h3>
+<ul>
+<li>0s: 평범한 쿠폰/상품권이 현금다발처럼 날림</li>
+<li>Text: “이게 왜 광고비가 됨?”</li>
+<li>1.5s: 무신사 play icon이 상금 박스로 변함</li>
+<li>3s: “총 2,000만원 + 공식 광고 송출”</li>
+</ul>
+
+<h3 id="Formula-B-금지형-훅">Formula B — 금지형 훅</h3>
+<ul>
+<li>0s: 손가락이 버튼 누르려 함</li>
+<li>Text: “이 버튼 누르면 안 됨”</li>
+<li>1.5s: 버튼 위에 “무신사 공식 광고 제출”</li>
+<li>3s: 누르면 상금/송출/인증서 화면으로 폭발</li>
+</ul>
+
+<h3 id="Formula-C-반전형-훅">Formula C — 반전형 훅</h3>
+<ul>
+<li>0s: “무신사 광고는 브랜드가 만든다?”</li>
+<li>1s: 화면 깨짐</li>
+<li>Text: “이번엔 고객이 만든다”</li>
+<li>3s: 5팀 공식 광고 채택</li>
+</ul>
+
+<h3 id="Formula-D-이상하게-구체적인-숫자">Formula D — 이상하게 구체적인 숫자</h3>
+<ul>
+<li>0s: “227팀 중 5팀만”</li>
+<li>1.5s: 랭킹표가 게임처럼 올라감</li>
+<li>3s: 1등 1,000만원 / 공식 광고 송출</li>
+</ul>
+
+<h2 id="6-최종-결론">6) 최종 결론</h2>
+<p>재미는 “안전한 예측 위반을 시청자가 직접 해결하는 과정”이고, 숏폼 시각 하이재킹은 그 원칙을 첫 3초 안에 압축하는 일이다.</p>
+
+<p>가장 강한 조합은:</p>
+
+<blockquote>
+<p>익숙한 장면 + 말 안 되는 시각 상태 + 이상하게 구체적인 숫자 + 2초 안 미니 반전 + 3초 안 증거</p>
+</blockquote>
+
+<p>반대로 가장 약한 조합은:</p>
+
+<blockquote>
+<p>로고 + 안내 제목 + 긴 설명 + 법무/조건 + 템플릿 POV 문장</p>
+</blockquote>
+
+<p>이번 소재에서는 <strong>07의 고대비/큰 약속을 첫 프레임 뼈대로 쓰되, 08의 보상표와 12의 절차는 뒤로 보내고, 09–11은 숏폼 본편이 아니라 랜딩/상세 페이지로 빼는 것</strong>이 맞다.</p>
+
+<h2 id="7-제작-전-체크리스트">7) 제작 전 체크리스트</h2>
+
+<h3 id="첫-프레임-체크">첫 프레임 체크</h3>
+<ul class="checklist">
+<li><span class="box "></span>1초 무음으로 봐도 주인공이 보이는가?</li>
+<li><span class="box "></span>텍스트가 12자 이내인가?</li>
+<li><span class="box "></span>익숙함과 이상함이 같이 있는가?</li>
+<li><span class="box "></span>로고/규칙/설명부터 시작하지 않는가?</li>
+</ul>
+
+<h3 id="3초-체크">3초 체크</h3>
+<ul class="checklist">
+<li><span class="box "></span>0초에 질문이 생기는가?</li>
+<li><span class="box "></span>1–2초에 새 정보/미니 반전이 있는가?</li>
+<li><span class="box "></span>3초 안에 증거가 하나 나오는가?</li>
+<li><span class="box "></span>시청자가 “다 봐야 이해됨”이 아니라 “조금만 더 보면 풀림”을 느끼는가?</li>
+</ul>
+
+<h3 id="10초-체크">10초 체크</h3>
+<ul class="checklist">
+<li><span class="box "></span>첫 약속이 실제 장면으로 보상되는가?</li>
+<li><span class="box "></span>같은 설명을 반복하지 않는가?</li>
+<li><span class="box "></span>컷마다 정보가 바뀌는가?</li>
+<li><span class="box "></span>공유/댓글거리 하나가 있는가? 예: “이거 진짜 광고로 나감?”</li>
+</ul>
+
+<h2 id="8-한-줄-전략">8) 한 줄 전략</h2>
+<p>무신사 소재는 “상금 안내”가 아니라 <strong>고객 영상이 진짜 공식 광고로 변하는 이상한 순간</strong>을 팔아야 한다.</p></div>
+</section>
+<section class="source-block" id="src-2">
+  <div class="source-head"><span>이론 노트 전체</span><a href="data/theory-notes.md">원문 파일</a></div>
+  <div class="source-body"><h1 id="Theory-notes">Theory notes</h1>
+
+<h2 id="Humor-fun-mechanisms-gathered-before-20-30">Humor / fun mechanisms gathered before 20:30</h2>
+<ul>
+<li>Incongruity theory: humor often starts when expectation and outcome do not match. For video, this means the viewer predicts A, image does B.</li>
+<li>Benign violation theory: funny when a norm/order is violated but the violation is safe enough to enjoy. Too harmless = boring; too threatening = discomfort; sweet spot = wrong but safe.</li>
+<li>Curiosity/reward: information gaps can act like reward loops; the mind wants closure when the scene implies “something doesn’t add up.”</li>
+<li>Flow/game-design: fun is not only winning. It comes from challenge, progress, feedback, agency, micro-achievement, and “see what happens next.”</li>
+<li>Reddit r/gamedesign community signal: people discuss fun through reward loops, satisfying wins, challenge vs annoyance, and intrinsic progress rather than prize alone.</li>
+</ul>
+
+<h2 id="20-42-Theory-cross-check">20:42 Theory cross-check</h2>
+<ul>
+<li>Humor theories cluster around incongruity, relief/tension release, superiority/status, and benign violation. Strongest applied short-form model: create tension/incongruity, keep it safe, then resolve or escalate.</li>
+<li>Flow: fun requires energized focus and balance of challenge vs skill. For passive video, this maps to “viewer can almost solve it” — not too obvious, not too confusing.</li>
+<li>Self-determination: intrinsic motivation is supported by autonomy, competence, relatedness. For community content: let viewer feel “I get this,” “I chose to stay,” “people like me understand this.”</li>
+<li>Combined content formula: safe wrongness + solvable gap + social recognition + quick feedback/payoff.</li>
+</ul>
+
+<h2 id="20-44-Visual-attention-science-cross-check">20:44 Visual attention science cross-check</h2>
+<ul>
+<li>Visual attention is guided by bottom-up factors (color/luminance/brightness/saturation contrast), top-down factors (task, motivation, emotion), and spatial biases.</li>
+<li>Natural images can have “global salience” that predicts first fixation beyond simple local contrast. For shorts this means: not just neon text; the whole composition must make one target obviously worth looking at.</li>
+<li>Novelty/surprise competes with raw salience. The strongest first frame combines both: high contrast + semantic wrongness.</li>
+</ul></div>
+</section>
+<section class="source-block" id="src-3">
+  <div class="source-head"><span>Reddit 브라우저 노트 전체</span><a href="data/reddit-browser-notes.md">원문 파일</a></div>
+  <div class="source-body"><h1 id="Reddit-X-browser-notes">Reddit/X/browser notes</h1>
+
+<h2 id="20-24-Reddit-search-why-is-something-funny-novelty-incongruity-surprise-dopamine">20:24 Reddit search: why is something funny novelty incongruity surprise dopamine</h2>
+<ul>
+<li>Search result quality weak but community signals: funny/dopamine, ADHD meme dynamics, dopamine boost, wholesome/ridiculous/funny stories.</li>
+<li>Useful angle: community language ties funny to dopamine/novelty/ridiculousness, but not enough as direct evidence.</li>
+</ul>
+
+<h2 id="20-25-Reddit-r-gamedesign-search-fun-challenge-surprise-mastery-feedback-loop">20:25 Reddit r/gamedesign search: fun challenge surprise mastery feedback loop</h2>
+<ul>
+<li>Results found: <code>Definition of Feedback Loops</code>; <code>winning experiences that are more satisfying than usual</code>; <code>Reward Loops &amp; Dopamine</code>; <code>Challenging vs annoying</code>; <code>Seeking Advice: Designing a Fun Gameplay Loop</code>.</li>
+<li>Useful community signal: fun is discussed as loop design, reward/dopamine, satisfaction of winning, and the line between challenge and annoyance.</li>
+</ul>
+
+<h2 id="20-25-Reddit-r-gamedesign-thread-satisfying-wins">20:25 Reddit r/gamedesign thread: satisfying wins</h2>
+<ul>
+<li>Debate clarified: fun is not only literal winning. Several commenters frame fun as intrinsic goal/progress/experience/&quot;see what happens next&quot;.</li>
+<li>Useful principle: reward comes after the re-introduction of an obstacle; fun is often obstacle → progress → small win, not prize alone.</li>
+<li>For short-form: open with an obstacle or impossible state, then create visible progress in seconds.</li>
+</ul>
+
+<h2 id="20-27-Reddit-search-benign-violation-humor-incongruity">20:27 Reddit search: benign violation / humor incongruity</h2>
+<ul>
+<li>Strong result: benign violation theory framed as 3 simultaneous conditions: (1) something threatens how the world ought to be, (2) it seems benign/harmless, (3) both meanings are seen at once.</li>
+<li>Community examples: harmless attacks, play fighting, tickling, social norm violation; <code>technically true but unexpected</code>, <code>confidently incorrect</code> communities signal expectation violation as repeatable content fuel.</li>
+<li>For short-form: make a visual/social violation that is clearly safe: impossible product behavior, wrong-but-technically-true situation, harmless chaos.</li>
+</ul>
+
+<h2 id="20-27-Reddit-r-Standup-search-joke-structure-premise-punchline">20:27 Reddit r/Standup search: joke structure / premise / punchline</h2>
+<ul>
+<li>Community signal: joke failure can come from premise/punchline order; some posts explicitly ask whether all jokes need misdirect and assumption shatter.</li>
+<li>For video: first frame can be the “premise,” next beat the “wrongness,” final beat the “reframe/punchline.” Sometimes reversing order works: show impossible punchline first, then reveal premise.</li>
+</ul>
+
+<h2 id="20-27-Reddit-r-marketing-search-funny-ads-pattern-interrupt-humor">20:27 Reddit r/marketing search: funny ads / pattern interrupt / humor</h2>
+<ul>
+<li>Community signal: bizarre or funny alone is not enough; posts complain about painfully unfunny ads and ads that are annoying rather than effective.</li>
+<li>Useful distinction: attention hack must resolve into relevance/meaning. Pure weirdness can stop scroll but damages conversion/share if it feels like gimmick.</li>
+</ul>
+
+<h2 id="20-32-Reddit-r-NewTubers-5-hook-patterns-after-studying-100-viral-faceless-short">20:32 Reddit r/NewTubers: 5 hook patterns after studying 100+ viral faceless shorts</h2>
+<ul>
+<li>Five patterns: contradiction hook; oddly specific date/number; “they won’t sell/show/allow it” restriction frame; familiar object turned wrong; real-time survival/present-tense frame.</li>
+<li>Poster’s thesis: first 3 seconds should not explain the video; it should create a question the brain must resolve.</li>
+<li>Comment signal: micro-escalation at 2–4 seconds matters so curiosity does not resolve too early.</li>
+<li>Skeptical comment: these are old direct-response patterns: curiosity gaps, specificity, open loops, pattern interrupts; skill is executing without sounding recycled.</li>
+<li>Practical implication: first 1 sec stops, 2–4 sec gives a second mini-twist, middle must still carry retention.</li>
+</ul>
+
+<h2 id="20-37-Reddit-r-SocialMediaMarketing-analyzed-1000-viral-hooks">20:37 Reddit r/SocialMediaMarketing: analyzed 1000+ viral hooks</h2>
+<ul>
+<li>Claimed patterns: contradiction/contrast, hyper-specificity, timeframe tension, POV-as-advice-disguised-as-scenario.</li>
+<li>Key line: the shift is away from “guru hooks” toward hooks that feel like genuine human moments, not obvious hooks.</li>
+<li>Method comment: sample was 70% viral hits over 1M views and 30% small-creator outliers using a 5x rule.</li>
+<li>Skeptic/user signal: some viewers instantly scroll away from obvious “POV” because it now reads as bullshit; hook formats decay when overused.</li>
+<li>Short-form implication: the best visual hijack is not just bright/loud; it must feel observed/lived-in, specific, and non-template.</li>
+</ul>
+
+<h2 id="20-40-Reddit-all-search-retention-hook-TikTok">20:40 Reddit all search: retention + hook + TikTok</h2>
+<ul>
+<li>Active communities surfaced: r/socialmedia, r/SocialMediaMarketing, r/shortsAlgorithm, r/TikTokLounge, r/GrowthHacking.</li>
+<li>Recurring topics: proven TikTok hook lists, 3 formulas across TikTok/IG/X/YT, algorithm stop despite high retention, whether editing/hooks matter more than idea.</li>
+<li>Caveat: one high-retention shortsAlgorithm result redirected/removed, so avoid overclaiming exact metric thresholds from that thread.</li>
+</ul>
+
+<h2 id="20-41-Reddit-r-youtubers-viewed-vs-swiped-away-rate-on-Shorts">20:41 Reddit r/youtubers: viewed vs swiped-away rate on Shorts</h2>
+<ul>
+<li>Creators treat viewed vs swiped-away as short-form equivalent of CTR: did the feed impression convert into a view rather than an immediate swipe?</li>
+<li>Reported ranges are noisy: one user says 35–75% is normal; another gets 30–40%; another reports a 70% viewed / 148% APV short shown only 444 times while a 48% viewed short got more feed exposure.</li>
+<li>Implication: first-frame hijack is necessary but not sufficient. Packaging/audience matching/title/topic may decide whether YouTube keeps testing the Short.</li>
+</ul>
+
+<h2 id="20-43-Reddit-r-editors-search-retention-editing-pacing">20:43 Reddit r/editors search: retention editing / pacing</h2>
+<ul>
+<li>Search results show professional editors debate “YouTube style retention editing,” jump cuts, pacing/rhythm, and whether jump cuts are inventive or lazy.</li>
+<li>Practical takeaway without overclaiming thread body: editor communities treat pacing as craft, not just cut frequency. Retention editing can work, but if every beat is a generic jump cut it reads cheap/lazy.</li>
+</ul></div>
+</section>
+<section class="source-block" id="src-4">
+  <div class="source-head"><span>DCInside 종합 노트 전체</span><a href="data/dc-synthesis.md">원문 파일</a></div>
+  <div class="source-body">
+<h2 id="20-44-DCInside-targeted-notes">20:44 DCInside targeted notes</h2>
+<ul>
+<li>DC 쇼츠 갤러리 쪽은 “조회수/피드/알고리즘/이탈/광고 짜증” 중심으로 활발하다. 고급 이론보다 실제 제작자 불안과 체감 알고리즘 이야기가 많음.</li>
+<li><code>절대 음원을 누르지 마세요</code> 같은 제목은 그 자체가 restriction/forbidden-action hook이다: 금지하면 누르고 싶어지는 정보 격차.</li>
+<li><code>의미없이 대충 만들수록 조회수가 높아</code> 류의 체감은 커뮤니티에서 흔한 좌절: 퀄리티 자체보다 feed-fit/첫 반응/시청자 매칭이 중요하다는 신호.</li>
+</ul></div>
+</section>
+<section class="source-block" id="src-5">
+  <div class="source-head"><span>DCInside 게시글 발췌 전체</span><a href="data/dc-post-excerpts.md">원문 파일</a></div>
+  <div class="source-body">
+<h2 id="fetch-20-31-45">fetch 20:31:45</h2>
+
+<h3 id="하도-양산형-많아서-계정-새로-파고-통계-내봄">하도 양산형 많아서 계정 새로 파고 통계 내봄</h3>
+<p>URL: https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=102</p>
+<p>BODY: 알고리즘 영향 없는 새 계정으로 쇼츠 100개를 무작위로 봤는데 양산형: 50개 순수 ‘불펌’: 33개 본인 영상: 17개 (그 중 9개가 예능 및 뉴스) 심각하다 참고로 순수 불펌 영상은 영화랑 예능이 대부분이었고 양산형은 한 남성은 애미가 없습니다 랑 로블이 많았음 결론적으로 개인 유튜버가 직접 찍은 영상은 100개 중 8개정도 반박시 니말 맞음</p>
+<p>COMMENTS:</p>
+
+<h3 id="시청자-참여율이-77퍼인데-조회수가-왤케-박은거임">시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임?</h3>
+<p>URL: https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294</p>
+<p>BODY: </p>
+<p>COMMENTS:</p>
+
+<h3 id="의미없이-대충-만들수록-조회수가-높아">의미없이 대충 만들수록 조회수가 높아</h3>
+<p>URL: https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450</p>
+<p>BODY: 알고리즘 병신인듯 이거 좀 재밋겠다 싶은거 오히려 조회수 적음</p>
+<p>COMMENTS:</p>
+
+<h3 id="쇼츠-이탈-이게-뭐냐">쇼츠 이탈 이게 뭐냐</h3>
+<p>URL: https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=73</p>
+<p>BODY: 재미로 쇼츠 올린지 2일차야 이탈 55.9%인데 이거 무슨 의미있는거냐?</p>
+<p>COMMENTS:</p>
+
+<h2 id="targeted-fetch-20-44-04">targeted fetch 20:44:04</h2>
+
+<h3 id="절대-음원을-누르지-마세요-이거-왜-유행하는-거냐">절대 음원을 누르지 마세요 이거 왜 유행하는 거냐</h3>
+<p>URL: https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=387</p>
+<p>BODY: 그거 누르면 음원쪽 광고비 받나</p>
+<p>COMMENTS:</p>
+
+<h3 id="의미없이-대충-만들수록-조회수가-높아">의미없이 대충 만들수록 조회수가 높아</h3>
+<p>URL: https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450</p>
+<p>BODY: 알고리즘 병신인듯 이거 좀 재밋겠다 싶은거 오히려 조회수 적음</p>
+<p>COMMENTS:</p>
+
+<h3 id="피드백좀-부탁할게">피드백좀 부탁할게 ㅠㅠ</h3>
+<p>URL: https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=282</p>
+<p>BODY: https://youtube.com/watch?v=Y_dfkEufHlk&amp;si=ldQCp8EzL1NyjBmG</p>
+<p>COMMENTS:</p>
+
+<h3 id="시청자-참여율이-77퍼인데-조회수가-왤케-박은거임">시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임?</h3>
+<p>URL: https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294</p>
+<p>BODY: </p>
+<p>COMMENTS:</p></div>
+</section>
+<section class="source-block" id="src-6">
+  <div class="source-head"><span>X 노트 전체</span><a href="data/x-notes.md">원문 파일</a></div>
+  <div class="source-body">
+<h2 id="20-38-X-search-first-3-seconds-shorts-hook-visual">20:38 X search: &quot;first 3 seconds&quot; shorts hook visual</h2>
+<ul>
+<li>X visible results repeat practitioner consensus: first 3 seconds are vital; use question/bold visual/teaser, text hook + interesting visual, fast pacing, clear captions.</li>
+<li>Specific recurring claims from creators: visual cut every 1–3 seconds; jump cuts every 1–2 seconds; target high completion (one tweet cites 70%+); pattern interrupts prevent passive scrolling.</li>
+<li>Useful caveat: most X advice is generic/growth-hack style, lower signal than Reddit/DC; use as consensus check, not primary evidence.</li>
+</ul>
+
+<h2 id="20-42-X-search-visual-hook-short-form-TikTok">20:42 X search: visual hook short-form/TikTok</h2>
+<ul>
+<li>Suno TikTok case surfaced: one repeatable format = satisfying/odd visual hook (cutting fruit) + funny text on screen + product transformation into song. This matches “familiar object turned wrong + transformation payoff.”</li>
+<li>Creator language: long/complex ideas need “ice cream” — a mass-audience visual wrapper before people will read/listen to depth.</li>
+<li>AI automation discourse on X emphasizes scraping/reusing viral formats; useful operationally, but high risk of generic recycled hooks. Need adaptation, not copying.</li>
+</ul>
+
+<h2 id="20-45-X-search-pattern-interrupt-reels-shorts">20:45 X search: pattern interrupt + reels/shorts</h2>
+<ul>
+<li>X is very templated here: “if you don’t hook in 2 seconds, you don’t exist,” then lists curiosity/shock/question/promise hooks.</li>
+<li>Low originality/high consensus: X confirms the creator-market belief that first 2 seconds matter, but most advice is text-hook oriented and recycled.</li>
+<li>Better extraction: use X as a format inventory, then translate into visual-first execution so it avoids copycat fatigue.</li>
+</ul></div>
+</section>
+<section class="source-block" id="src-7">
+  <div class="source-head"><span>무신사 프레임 시각 분석 전체</span><a href="data/visual-frame-notes.md">원문 파일</a></div>
+  <div class="source-body">
+<h2 id="20-39-Provided-Musinsa-ad-frame-inspection">20:39 Provided Musinsa ad frame inspection</h2>
+<ul>
+<li>07: strongest first-glance frame. Black field + hot orange 3D play icon + huge white money/benefit text. Clear hierarchy: badge → headline → explanation. Pattern interrupt is not conceptual, but salience is high.</li>
+<li>08: prize table is credible but dense. Good orange/white hierarchy, but scroll-stopping power depends on money graphic at top; list itself is retention/confirmation, not first-second hook.</li>
+<li>09: pure text block. Legible on desktop, weak for short-form first glance. Use only after viewer is already committed.</li>
+<li>10: extremely dense rules. Low visual hijack; should be linked/secondary, not a reel frame unless cropped into one line at a time.</li>
+<li>11: gray legal notice. Very low hijack; necessary info but kills energy.</li>
+<li>12: guide steps with phone screenshots. Better than legal frames because it creates procedural progression, but text is too small; should be animated as one step per beat with enlarged tap targets.</li>
+<li>General rule from these frames: high-contrast object + single promise stops; dense lists certify; legal/detail frames should never occupy the first 1–3 seconds.</li>
+</ul></div>
+</section>
+<section class="source-block" id="src-8">
+  <div class="source-head"><span>커뮤니티 수집 로그 전체</span><a href="data/community-notes.md">원문 파일</a></div>
+  <div class="source-body">
+<h2 id="Physical-time-check-20-24-19-phase-fun">Physical time check: 20:24:19 phase=fun</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-재미">DCInside 유튜브 쇼츠 검색: 재미</h3>
+<ul>
+<li>460 일반 7살 아이의 그림과 상상 53탄일상 준이짱짱 03.11 47 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=460&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>456 일반 [재미 인기] 갈매기 먹이주고 받아 먹기 기술 / 월미도 / 핫이슈 준이짱짱 02.28 47 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=456&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>446 일반 원효대교 한강괴물 출현 상상 준이짱짱 02.19 59 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=446&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>445 일반 7살 아이의 그림과아이의 상상 4탄 준이짱짱 02.19 55 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=445&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>236 일반 씨발새끼들 전부 채널추천 안함 조져논다 [2] ㅇㅇ (1.230) 24.12.08 611 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=236&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>136 일반 유튜브 쇼츠 존나 재미없네 ㅇㅇ 24.02.11 395 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=136&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>73 일반 쇼츠 이탈 이게 뭐냐 [2] ㅇㅇ (106.102) 23.08.04 506 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=73&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>45 일반 여러분은 가장 재미있었던 인생 쇼츠가 뭔가요? 그 (211.252) 23.06.05 54 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=45&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-웃긴">DCInside 유튜브 쇼츠 검색: 웃긴</h3>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-밈">DCInside 유튜브 쇼츠 검색: 밈</h3>
+<ul>
+<li>266 일반 쇼츠 유튜브 질문 유갤러 (222.237) 25.02.25 158 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=266&amp;s_type=search_subject_memo&amp;s_keyword=밈&amp;page=1</li>
+<li>220 일반 중저음 쇼츠유튜버 이름뭐더라 [2] 유갤러 (149.88) 24.10.14 423 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=220&amp;s_type=search_subject_memo&amp;s_keyword=밈&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-광고">DCInside 유튜브 쇼츠 검색: 광고</h3>
+<ul>
+<li>479 일반 진짜 궁금한게 다이소나, 올영이나 제품 쇼츠 올리는거 ㅇㅇ (58.123) 05.11 33 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=479&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>451 일반 쇼츠 자동생성ai중에 shortsbomb 쓸만함? [6] 유갤러 (218.153) 02.24 435 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=451&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>407 일반 너네들은 유튜브를 대체할 동영상 플랫폼이 생길 수 있다 생각하냐? [3] ㅇㅇ (58.151) 25.11.21 444 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=407&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>406 일반 갑자기광고 왜이지랄남? [1] 유갤러 (106.101) 25.11.20 601 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=406&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>390 일반 제휴사 광고 안보는법 알려준다 유갤러 (210.178) 25.10.02 1175 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=390&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>387 일반 절대 음원을 누르지 마세요 이거 왜 유행하는 거냐 유갤러 (221.168) 25.09.25 783 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=387&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>384 일반 Ai 보이스 이거 뭔지 아는사람(인스타 광고임 주의) 유갤러 (211.234) 25.09.18 224 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=384&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>379 일반 유튜브 쇼츠 ㅅ☆아 영랑 25.09.05 336 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=379&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>370 일반 제휴사 광고 진짜 애미강간당했나 ㅇㅇ 25.08.24 1404 12 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=370&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>369 일반 제휴사 광고 채널주가 내릴 수 있는거임? [1] 유갤러 (59.22) 25.08.24 572 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=369&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-24-49-phase-fun">Physical time check: 20:24:49 phase=fun</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-재미">DCInside 유튜브 쇼츠 검색: 재미</h3>
+<ul>
+<li>460 일반 7살 아이의 그림과 상상 53탄일상 준이짱짱 03.11 47 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=460&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>456 일반 [재미 인기] 갈매기 먹이주고 받아 먹기 기술 / 월미도 / 핫이슈 준이짱짱 02.28 47 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=456&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>446 일반 원효대교 한강괴물 출현 상상 준이짱짱 02.19 59 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=446&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>445 일반 7살 아이의 그림과아이의 상상 4탄 준이짱짱 02.19 55 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=445&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>236 일반 씨발새끼들 전부 채널추천 안함 조져논다 [2] ㅇㅇ (1.230) 24.12.08 611 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=236&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>136 일반 유튜브 쇼츠 존나 재미없네 ㅇㅇ 24.02.11 395 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=136&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>73 일반 쇼츠 이탈 이게 뭐냐 [2] ㅇㅇ (106.102) 23.08.04 506 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=73&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>45 일반 여러분은 가장 재미있었던 인생 쇼츠가 뭔가요? 그 (211.252) 23.06.05 54 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=45&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-웃긴">DCInside 유튜브 쇼츠 검색: 웃긴</h3>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-밈">DCInside 유튜브 쇼츠 검색: 밈</h3>
+<ul>
+<li>266 일반 쇼츠 유튜브 질문 유갤러 (222.237) 25.02.25 158 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=266&amp;s_type=search_subject_memo&amp;s_keyword=밈&amp;page=1</li>
+<li>220 일반 중저음 쇼츠유튜버 이름뭐더라 [2] 유갤러 (149.88) 24.10.14 423 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=220&amp;s_type=search_subject_memo&amp;s_keyword=밈&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-광고">DCInside 유튜브 쇼츠 검색: 광고</h3>
+<ul>
+<li>479 일반 진짜 궁금한게 다이소나, 올영이나 제품 쇼츠 올리는거 ㅇㅇ (58.123) 05.11 33 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=479&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>451 일반 쇼츠 자동생성ai중에 shortsbomb 쓸만함? [6] 유갤러 (218.153) 02.24 435 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=451&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>407 일반 너네들은 유튜브를 대체할 동영상 플랫폼이 생길 수 있다 생각하냐? [3] ㅇㅇ (58.151) 25.11.21 444 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=407&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>406 일반 갑자기광고 왜이지랄남? [1] 유갤러 (106.101) 25.11.20 601 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=406&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>390 일반 제휴사 광고 안보는법 알려준다 유갤러 (210.178) 25.10.02 1175 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=390&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>387 일반 절대 음원을 누르지 마세요 이거 왜 유행하는 거냐 유갤러 (221.168) 25.09.25 783 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=387&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>384 일반 Ai 보이스 이거 뭔지 아는사람(인스타 광고임 주의) 유갤러 (211.234) 25.09.18 224 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=384&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>379 일반 유튜브 쇼츠 ㅅ☆아 영랑 25.09.05 336 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=379&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>370 일반 제휴사 광고 진짜 애미강간당했나 ㅇㅇ 25.08.24 1404 12 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=370&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>369 일반 제휴사 광고 채널주가 내릴 수 있는거임? [1] 유갤러 (59.22) 25.08.24 572 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=369&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-26-57-phase-fun">Physical time check: 20:26:57 phase=fun</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-재미">DCInside 유튜브 쇼츠 검색: 재미</h3>
+<ul>
+<li>460 일반 7살 아이의 그림과 상상 53탄일상 준이짱짱 03.11 47 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=460&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>456 일반 [재미 인기] 갈매기 먹이주고 받아 먹기 기술 / 월미도 / 핫이슈 준이짱짱 02.28 47 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=456&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>446 일반 원효대교 한강괴물 출현 상상 준이짱짱 02.19 59 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=446&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>445 일반 7살 아이의 그림과아이의 상상 4탄 준이짱짱 02.19 55 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=445&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>236 일반 씨발새끼들 전부 채널추천 안함 조져논다 [2] ㅇㅇ (1.230) 24.12.08 611 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=236&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>136 일반 유튜브 쇼츠 존나 재미없네 ㅇㅇ 24.02.11 395 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=136&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>73 일반 쇼츠 이탈 이게 뭐냐 [2] ㅇㅇ (106.102) 23.08.04 506 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=73&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>45 일반 여러분은 가장 재미있었던 인생 쇼츠가 뭔가요? 그 (211.252) 23.06.05 54 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=45&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-웃긴">DCInside 유튜브 쇼츠 검색: 웃긴</h3>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-밈">DCInside 유튜브 쇼츠 검색: 밈</h3>
+<ul>
+<li>266 일반 쇼츠 유튜브 질문 유갤러 (222.237) 25.02.25 158 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=266&amp;s_type=search_subject_memo&amp;s_keyword=밈&amp;page=1</li>
+<li>220 일반 중저음 쇼츠유튜버 이름뭐더라 [2] 유갤러 (149.88) 24.10.14 423 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=220&amp;s_type=search_subject_memo&amp;s_keyword=밈&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-광고">DCInside 유튜브 쇼츠 검색: 광고</h3>
+<ul>
+<li>479 일반 진짜 궁금한게 다이소나, 올영이나 제품 쇼츠 올리는거 ㅇㅇ (58.123) 05.11 33 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=479&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>451 일반 쇼츠 자동생성ai중에 shortsbomb 쓸만함? [6] 유갤러 (218.153) 02.24 435 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=451&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>407 일반 너네들은 유튜브를 대체할 동영상 플랫폼이 생길 수 있다 생각하냐? [3] ㅇㅇ (58.151) 25.11.21 444 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=407&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>406 일반 갑자기광고 왜이지랄남? [1] 유갤러 (106.101) 25.11.20 601 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=406&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>390 일반 제휴사 광고 안보는법 알려준다 유갤러 (210.178) 25.10.02 1175 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=390&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>387 일반 절대 음원을 누르지 마세요 이거 왜 유행하는 거냐 유갤러 (221.168) 25.09.25 783 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=387&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>384 일반 Ai 보이스 이거 뭔지 아는사람(인스타 광고임 주의) 유갤러 (211.234) 25.09.18 224 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=384&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>379 일반 유튜브 쇼츠 ㅅ☆아 영랑 25.09.05 336 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=379&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>370 일반 제휴사 광고 진짜 애미강간당했나 ㅇㅇ 25.08.24 1404 12 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=370&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>369 일반 제휴사 광고 채널주가 내릴 수 있는거임? [1] 유갤러 (59.22) 25.08.24 572 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=369&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-29-58-phase-fun">Physical time check: 20:29:58 phase=fun</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-재미">DCInside 유튜브 쇼츠 검색: 재미</h3>
+<ul>
+<li>460 일반 7살 아이의 그림과 상상 53탄일상 준이짱짱 03.11 47 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=460&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>456 일반 [재미 인기] 갈매기 먹이주고 받아 먹기 기술 / 월미도 / 핫이슈 준이짱짱 02.28 47 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=456&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>446 일반 원효대교 한강괴물 출현 상상 준이짱짱 02.19 59 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=446&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>445 일반 7살 아이의 그림과아이의 상상 4탄 준이짱짱 02.19 55 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=445&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>236 일반 씨발새끼들 전부 채널추천 안함 조져논다 [2] ㅇㅇ (1.230) 24.12.08 611 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=236&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>136 일반 유튜브 쇼츠 존나 재미없네 ㅇㅇ 24.02.11 395 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=136&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>73 일반 쇼츠 이탈 이게 뭐냐 [2] ㅇㅇ (106.102) 23.08.04 506 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=73&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+<li>45 일반 여러분은 가장 재미있었던 인생 쇼츠가 뭔가요? 그 (211.252) 23.06.05 54 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=45&amp;s_type=search_subject_memo&amp;s_keyword=재미&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-웃긴">DCInside 유튜브 쇼츠 검색: 웃긴</h3>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-밈">DCInside 유튜브 쇼츠 검색: 밈</h3>
+<ul>
+<li>266 일반 쇼츠 유튜브 질문 유갤러 (222.237) 25.02.25 158 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=266&amp;s_type=search_subject_memo&amp;s_keyword=밈&amp;page=1</li>
+<li>220 일반 중저음 쇼츠유튜버 이름뭐더라 [2] 유갤러 (149.88) 24.10.14 423 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=220&amp;s_type=search_subject_memo&amp;s_keyword=밈&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-광고">DCInside 유튜브 쇼츠 검색: 광고</h3>
+<ul>
+<li>479 일반 진짜 궁금한게 다이소나, 올영이나 제품 쇼츠 올리는거 ㅇㅇ (58.123) 05.11 33 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=479&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>451 일반 쇼츠 자동생성ai중에 shortsbomb 쓸만함? [6] 유갤러 (218.153) 02.24 435 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=451&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>407 일반 너네들은 유튜브를 대체할 동영상 플랫폼이 생길 수 있다 생각하냐? [3] ㅇㅇ (58.151) 25.11.21 444 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=407&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>406 일반 갑자기광고 왜이지랄남? [1] 유갤러 (106.101) 25.11.20 601 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=406&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>390 일반 제휴사 광고 안보는법 알려준다 유갤러 (210.178) 25.10.02 1175 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=390&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>387 일반 절대 음원을 누르지 마세요 이거 왜 유행하는 거냐 유갤러 (221.168) 25.09.25 783 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=387&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>384 일반 Ai 보이스 이거 뭔지 아는사람(인스타 광고임 주의) 유갤러 (211.234) 25.09.18 224 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=384&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>379 일반 유튜브 쇼츠 ㅅ☆아 영랑 25.09.05 336 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=379&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>370 일반 제휴사 광고 진짜 애미강간당했나 ㅇㅇ 25.08.24 1404 12 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=370&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+<li>369 일반 제휴사 광고 채널주가 내릴 수 있는거임? [1] 유갤러 (59.22) 25.08.24 572 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=369&amp;s_type=search_subject_memo&amp;s_keyword=광고&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-31-21-phase-visual">Physical time check: 20:31:21 phase=visual</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-알고리즘">DCInside 유튜브 쇼츠 검색: 알고리즘</h3>
+<ul>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 334 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>402 일반 형들.. 나 쇼츠하꼬인데 이거 무섭다 [3] 유갤러 (118.235) 25.11.15 1205 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=402&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>392 일반 연속 7개영상 노출수 0... [2] 유갤러 (14.47) 25.10.05 781 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=392&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>381 일반 쇼츠 시작한지 일주일 됨, 나도 드디어 알고리즘을 받았다 [2] 유갤러 (175.200) 25.09.14 1393 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=381&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>339 일반 이유좀 알려줘라... [1] 유갤러 (211.238) 25.07.02 348 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=339&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>274 일반 이 영상 퀄 어떤가요? 피드 박살나서 퀄 문제인지 궁금해서 올립니다 [4] church1728 (211.181) 25.03.17 908 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=274&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>147 일반 ㅈ같은 알고리즘 [2] hstommy24 24.02.23 459 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=147&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>102 일반 하도 양산형 많아서 계정 새로 파고 통계 내봄 [6] ㅇㅇ (118.221) 23.12.06 4530 19 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=102&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>4 일반 유튜브 쇼츠 문해력 [2] 데스파라 (220.71) 23.01.08 391 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=4&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-조회수">DCInside 유튜브 쇼츠 검색: 조회수</h3>
+<ul>
+<li>481 일반 &amp;lt;수익창출&amp;gt; 시켜드립니다. (자연 조회수 / AI,트래픽조작 NO!) 유갤러 (183.109) 05.14 23 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=481&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>458 일반 형들 뉴비 조회수노출 질문좀 ㅜㅜ [1] 유갤러 (14.37) 03.02 369 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=458&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>454 일반 형들 궁금한게 있는데 [1] 유갤러 (123.248) 02.26 236 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=454&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 334 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>444 일반 하시밯 쇼츠 세개올렸는데 조회수 다 200따리네 [3] ㅇㅇ (58.140) 02.16 303 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=444&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>430 일반 평소에 1~3만정도 꾸준히나오는 하꼬채널인데 [3] 유갤러 (124.54) 01.20 533 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=430&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>426 일반 롤 쇼츠 5일동안 10개 정도 올렸는데 조회수 10 미만 [2] 유갤러 (118.235) 01.17 291 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=426&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>425 일반 쇼츠 첫영상 올렸는데 이정도면 ㄱㅊ? [1] ㅇㅇ (171.224) 01.11 702 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=425&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>422 일반 업로드 한지 16시간 나 ㅈ된거아냐 [1] 유갤러 (121.167) 01.06 795 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=422&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-떡상">DCInside 유튜브 쇼츠 검색: 떡상</h3>
+<ul>
+<li>327 일반 2달만에 크갤러초보 (115.143) 25.06.09 439 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=327&amp;s_type=search_subject_memo&amp;s_keyword=떡상&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-피드">DCInside 유튜브 쇼츠 검색: 피드</h3>
+<ul>
+<li>408 일반 유용한 유튜브 관리 툴을 만들었습니다. [2] 유갤러 (211.196) 25.11.26 310 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=408&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>337 일반 쇼츠/릴스 댓글 링크 공유 귀찮을 때 이거 써라 [1] 유갤러 (116.41) 25.07.01 355 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=337&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>331 일반 유튜브 애미 터진년들 ㅇㅇ (211.245) 25.06.18 265 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=331&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>302 일반 이틀에 한번 올려도되냐? ㅇㅇ (175.215) 25.05.05 216 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=302&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>301 일반 피드백 ㄱㄴ? [1] ㅇㅇ (211.196) 25.05.04 212 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=301&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>296 일반 그냥 진짜 나같은 경우는 채널 새로파는게 맞는거 같음 [2] ㅇㅇ (103.226) 25.04.30 855 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=296&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>294 일반 시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임? [2] 유갤러 (14.35) 25.04.23 942 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>286 일반 왜 영상을 올려도 피드가 0임?? 유갤러 (110.13) 25.03.30 273 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=286&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>282 공유 피드백좀 부탁할게 ㅠㅠ [2] 유갤러 (211.234) 25.03.24 609 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=282&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-32-59-phase-visual">Physical time check: 20:32:59 phase=visual</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-알고리즘">DCInside 유튜브 쇼츠 검색: 알고리즘</h3>
+<ul>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 335 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>402 일반 형들.. 나 쇼츠하꼬인데 이거 무섭다 [3] 유갤러 (118.235) 25.11.15 1205 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=402&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>392 일반 연속 7개영상 노출수 0... [2] 유갤러 (14.47) 25.10.05 781 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=392&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>381 일반 쇼츠 시작한지 일주일 됨, 나도 드디어 알고리즘을 받았다 [2] 유갤러 (175.200) 25.09.14 1393 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=381&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>339 일반 이유좀 알려줘라... [1] 유갤러 (211.238) 25.07.02 348 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=339&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>274 일반 이 영상 퀄 어떤가요? 피드 박살나서 퀄 문제인지 궁금해서 올립니다 [4] church1728 (211.181) 25.03.17 908 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=274&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>147 일반 ㅈ같은 알고리즘 [2] hstommy24 24.02.23 459 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=147&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>102 일반 하도 양산형 많아서 계정 새로 파고 통계 내봄 [6] ㅇㅇ (118.221) 23.12.06 4531 19 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=102&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>4 일반 유튜브 쇼츠 문해력 [2] 데스파라 (220.71) 23.01.08 391 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=4&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-조회수">DCInside 유튜브 쇼츠 검색: 조회수</h3>
+<ul>
+<li>481 일반 &amp;lt;수익창출&amp;gt; 시켜드립니다. (자연 조회수 / AI,트래픽조작 NO!) 유갤러 (183.109) 05.14 23 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=481&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>458 일반 형들 뉴비 조회수노출 질문좀 ㅜㅜ [1] 유갤러 (14.37) 03.02 369 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=458&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>454 일반 형들 궁금한게 있는데 [1] 유갤러 (123.248) 02.26 236 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=454&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 335 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>444 일반 하시밯 쇼츠 세개올렸는데 조회수 다 200따리네 [3] ㅇㅇ (58.140) 02.16 303 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=444&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>430 일반 평소에 1~3만정도 꾸준히나오는 하꼬채널인데 [3] 유갤러 (124.54) 01.20 533 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=430&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>426 일반 롤 쇼츠 5일동안 10개 정도 올렸는데 조회수 10 미만 [2] 유갤러 (118.235) 01.17 291 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=426&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>425 일반 쇼츠 첫영상 올렸는데 이정도면 ㄱㅊ? [1] ㅇㅇ (171.224) 01.11 702 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=425&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>422 일반 업로드 한지 16시간 나 ㅈ된거아냐 [1] 유갤러 (121.167) 01.06 795 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=422&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-떡상">DCInside 유튜브 쇼츠 검색: 떡상</h3>
+<ul>
+<li>327 일반 2달만에 크갤러초보 (115.143) 25.06.09 439 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=327&amp;s_type=search_subject_memo&amp;s_keyword=떡상&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-피드">DCInside 유튜브 쇼츠 검색: 피드</h3>
+<ul>
+<li>408 일반 유용한 유튜브 관리 툴을 만들었습니다. [2] 유갤러 (211.196) 25.11.26 310 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=408&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>337 일반 쇼츠/릴스 댓글 링크 공유 귀찮을 때 이거 써라 [1] 유갤러 (116.41) 25.07.01 355 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=337&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>331 일반 유튜브 애미 터진년들 ㅇㅇ (211.245) 25.06.18 265 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=331&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>302 일반 이틀에 한번 올려도되냐? ㅇㅇ (175.215) 25.05.05 216 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=302&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>301 일반 피드백 ㄱㄴ? [1] ㅇㅇ (211.196) 25.05.04 212 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=301&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>296 일반 그냥 진짜 나같은 경우는 채널 새로파는게 맞는거 같음 [2] ㅇㅇ (103.226) 25.04.30 855 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=296&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>294 일반 시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임? [2] 유갤러 (14.35) 25.04.23 943 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>286 일반 왜 영상을 올려도 피드가 0임?? 유갤러 (110.13) 25.03.30 273 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=286&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>282 공유 피드백좀 부탁할게 ㅠㅠ [2] 유갤러 (211.234) 25.03.24 609 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=282&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-36-01-phase-visual">Physical time check: 20:36:01 phase=visual</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-알고리즘">DCInside 유튜브 쇼츠 검색: 알고리즘</h3>
+<ul>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 335 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>402 일반 형들.. 나 쇼츠하꼬인데 이거 무섭다 [3] 유갤러 (118.235) 25.11.15 1205 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=402&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>392 일반 연속 7개영상 노출수 0... [2] 유갤러 (14.47) 25.10.05 781 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=392&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>381 일반 쇼츠 시작한지 일주일 됨, 나도 드디어 알고리즘을 받았다 [2] 유갤러 (175.200) 25.09.14 1393 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=381&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>339 일반 이유좀 알려줘라... [1] 유갤러 (211.238) 25.07.02 348 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=339&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>274 일반 이 영상 퀄 어떤가요? 피드 박살나서 퀄 문제인지 궁금해서 올립니다 [4] church1728 (211.181) 25.03.17 908 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=274&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>147 일반 ㅈ같은 알고리즘 [2] hstommy24 24.02.23 459 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=147&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>102 일반 하도 양산형 많아서 계정 새로 파고 통계 내봄 [6] ㅇㅇ (118.221) 23.12.06 4531 19 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=102&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>4 일반 유튜브 쇼츠 문해력 [2] 데스파라 (220.71) 23.01.08 391 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=4&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-조회수">DCInside 유튜브 쇼츠 검색: 조회수</h3>
+<ul>
+<li>481 일반 &amp;lt;수익창출&amp;gt; 시켜드립니다. (자연 조회수 / AI,트래픽조작 NO!) 유갤러 (183.109) 05.14 23 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=481&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>458 일반 형들 뉴비 조회수노출 질문좀 ㅜㅜ [1] 유갤러 (14.37) 03.02 369 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=458&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>454 일반 형들 궁금한게 있는데 [1] 유갤러 (123.248) 02.26 236 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=454&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 335 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>444 일반 하시밯 쇼츠 세개올렸는데 조회수 다 200따리네 [3] ㅇㅇ (58.140) 02.16 303 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=444&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>430 일반 평소에 1~3만정도 꾸준히나오는 하꼬채널인데 [3] 유갤러 (124.54) 01.20 533 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=430&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>426 일반 롤 쇼츠 5일동안 10개 정도 올렸는데 조회수 10 미만 [2] 유갤러 (118.235) 01.17 291 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=426&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>425 일반 쇼츠 첫영상 올렸는데 이정도면 ㄱㅊ? [1] ㅇㅇ (171.224) 01.11 702 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=425&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>422 일반 업로드 한지 16시간 나 ㅈ된거아냐 [1] 유갤러 (121.167) 01.06 795 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=422&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-떡상">DCInside 유튜브 쇼츠 검색: 떡상</h3>
+<ul>
+<li>327 일반 2달만에 크갤러초보 (115.143) 25.06.09 439 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=327&amp;s_type=search_subject_memo&amp;s_keyword=떡상&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-피드">DCInside 유튜브 쇼츠 검색: 피드</h3>
+<ul>
+<li>408 일반 유용한 유튜브 관리 툴을 만들었습니다. [2] 유갤러 (211.196) 25.11.26 310 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=408&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>337 일반 쇼츠/릴스 댓글 링크 공유 귀찮을 때 이거 써라 [1] 유갤러 (116.41) 25.07.01 355 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=337&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>331 일반 유튜브 애미 터진년들 ㅇㅇ (211.245) 25.06.18 265 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=331&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>302 일반 이틀에 한번 올려도되냐? ㅇㅇ (175.215) 25.05.05 216 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=302&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>301 일반 피드백 ㄱㄴ? [1] ㅇㅇ (211.196) 25.05.04 212 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=301&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>296 일반 그냥 진짜 나같은 경우는 채널 새로파는게 맞는거 같음 [2] ㅇㅇ (103.226) 25.04.30 855 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=296&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>294 일반 시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임? [2] 유갤러 (14.35) 25.04.23 943 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>286 일반 왜 영상을 올려도 피드가 0임?? 유갤러 (110.13) 25.03.30 273 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=286&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>282 공유 피드백좀 부탁할게 ㅠㅠ [2] 유갤러 (211.234) 25.03.24 609 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=282&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-39-02-phase-visual">Physical time check: 20:39:02 phase=visual</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-알고리즘">DCInside 유튜브 쇼츠 검색: 알고리즘</h3>
+<ul>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 335 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>402 일반 형들.. 나 쇼츠하꼬인데 이거 무섭다 [3] 유갤러 (118.235) 25.11.15 1205 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=402&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>392 일반 연속 7개영상 노출수 0... [2] 유갤러 (14.47) 25.10.05 781 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=392&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>381 일반 쇼츠 시작한지 일주일 됨, 나도 드디어 알고리즘을 받았다 [2] 유갤러 (175.200) 25.09.14 1393 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=381&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>339 일반 이유좀 알려줘라... [1] 유갤러 (211.238) 25.07.02 348 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=339&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>274 일반 이 영상 퀄 어떤가요? 피드 박살나서 퀄 문제인지 궁금해서 올립니다 [4] church1728 (211.181) 25.03.17 908 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=274&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>147 일반 ㅈ같은 알고리즘 [2] hstommy24 24.02.23 459 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=147&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>102 일반 하도 양산형 많아서 계정 새로 파고 통계 내봄 [6] ㅇㅇ (118.221) 23.12.06 4531 19 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=102&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>4 일반 유튜브 쇼츠 문해력 [2] 데스파라 (220.71) 23.01.08 391 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=4&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-조회수">DCInside 유튜브 쇼츠 검색: 조회수</h3>
+<ul>
+<li>481 일반 &amp;lt;수익창출&amp;gt; 시켜드립니다. (자연 조회수 / AI,트래픽조작 NO!) 유갤러 (183.109) 05.14 23 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=481&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>458 일반 형들 뉴비 조회수노출 질문좀 ㅜㅜ [1] 유갤러 (14.37) 03.02 369 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=458&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>454 일반 형들 궁금한게 있는데 [1] 유갤러 (123.248) 02.26 236 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=454&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 335 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>444 일반 하시밯 쇼츠 세개올렸는데 조회수 다 200따리네 [3] ㅇㅇ (58.140) 02.16 303 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=444&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>430 일반 평소에 1~3만정도 꾸준히나오는 하꼬채널인데 [3] 유갤러 (124.54) 01.20 533 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=430&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>426 일반 롤 쇼츠 5일동안 10개 정도 올렸는데 조회수 10 미만 [2] 유갤러 (118.235) 01.17 291 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=426&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>425 일반 쇼츠 첫영상 올렸는데 이정도면 ㄱㅊ? [1] ㅇㅇ (171.224) 01.11 702 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=425&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>422 일반 업로드 한지 16시간 나 ㅈ된거아냐 [1] 유갤러 (121.167) 01.06 795 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=422&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-떡상">DCInside 유튜브 쇼츠 검색: 떡상</h3>
+<ul>
+<li>327 일반 2달만에 크갤러초보 (115.143) 25.06.09 439 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=327&amp;s_type=search_subject_memo&amp;s_keyword=떡상&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-피드">DCInside 유튜브 쇼츠 검색: 피드</h3>
+<ul>
+<li>408 일반 유용한 유튜브 관리 툴을 만들었습니다. [2] 유갤러 (211.196) 25.11.26 310 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=408&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>337 일반 쇼츠/릴스 댓글 링크 공유 귀찮을 때 이거 써라 [1] 유갤러 (116.41) 25.07.01 355 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=337&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>331 일반 유튜브 애미 터진년들 ㅇㅇ (211.245) 25.06.18 265 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=331&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>302 일반 이틀에 한번 올려도되냐? ㅇㅇ (175.215) 25.05.05 216 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=302&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>301 일반 피드백 ㄱㄴ? [1] ㅇㅇ (211.196) 25.05.04 212 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=301&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>296 일반 그냥 진짜 나같은 경우는 채널 새로파는게 맞는거 같음 [2] ㅇㅇ (103.226) 25.04.30 855 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=296&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>294 일반 시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임? [2] 유갤러 (14.35) 25.04.23 943 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>286 일반 왜 영상을 올려도 피드가 0임?? 유갤러 (110.13) 25.03.30 273 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=286&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>282 공유 피드백좀 부탁할게 ㅠㅠ [2] 유갤러 (211.234) 25.03.24 609 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=282&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-42-03-phase-visual">Physical time check: 20:42:03 phase=visual</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-알고리즘">DCInside 유튜브 쇼츠 검색: 알고리즘</h3>
+<ul>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 335 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>402 일반 형들.. 나 쇼츠하꼬인데 이거 무섭다 [3] 유갤러 (118.235) 25.11.15 1205 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=402&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>392 일반 연속 7개영상 노출수 0... [2] 유갤러 (14.47) 25.10.05 781 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=392&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>381 일반 쇼츠 시작한지 일주일 됨, 나도 드디어 알고리즘을 받았다 [2] 유갤러 (175.200) 25.09.14 1393 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=381&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>339 일반 이유좀 알려줘라... [1] 유갤러 (211.238) 25.07.02 348 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=339&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>274 일반 이 영상 퀄 어떤가요? 피드 박살나서 퀄 문제인지 궁금해서 올립니다 [4] church1728 (211.181) 25.03.17 908 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=274&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>147 일반 ㅈ같은 알고리즘 [2] hstommy24 24.02.23 459 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=147&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>102 일반 하도 양산형 많아서 계정 새로 파고 통계 내봄 [6] ㅇㅇ (118.221) 23.12.06 4531 19 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=102&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>4 일반 유튜브 쇼츠 문해력 [2] 데스파라 (220.71) 23.01.08 391 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=4&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-조회수">DCInside 유튜브 쇼츠 검색: 조회수</h3>
+<ul>
+<li>481 일반 &amp;lt;수익창출&amp;gt; 시켜드립니다. (자연 조회수 / AI,트래픽조작 NO!) 유갤러 (183.109) 05.14 23 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=481&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>458 일반 형들 뉴비 조회수노출 질문좀 ㅜㅜ [1] 유갤러 (14.37) 03.02 369 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=458&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>454 일반 형들 궁금한게 있는데 [1] 유갤러 (123.248) 02.26 236 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=454&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 335 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>444 일반 하시밯 쇼츠 세개올렸는데 조회수 다 200따리네 [3] ㅇㅇ (58.140) 02.16 303 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=444&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>430 일반 평소에 1~3만정도 꾸준히나오는 하꼬채널인데 [3] 유갤러 (124.54) 01.20 533 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=430&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>426 일반 롤 쇼츠 5일동안 10개 정도 올렸는데 조회수 10 미만 [2] 유갤러 (118.235) 01.17 291 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=426&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>425 일반 쇼츠 첫영상 올렸는데 이정도면 ㄱㅊ? [1] ㅇㅇ (171.224) 01.11 702 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=425&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>422 일반 업로드 한지 16시간 나 ㅈ된거아냐 [1] 유갤러 (121.167) 01.06 795 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=422&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-떡상">DCInside 유튜브 쇼츠 검색: 떡상</h3>
+<ul>
+<li>327 일반 2달만에 크갤러초보 (115.143) 25.06.09 439 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=327&amp;s_type=search_subject_memo&amp;s_keyword=떡상&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-피드">DCInside 유튜브 쇼츠 검색: 피드</h3>
+<ul>
+<li>408 일반 유용한 유튜브 관리 툴을 만들었습니다. [2] 유갤러 (211.196) 25.11.26 310 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=408&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>337 일반 쇼츠/릴스 댓글 링크 공유 귀찮을 때 이거 써라 [1] 유갤러 (116.41) 25.07.01 355 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=337&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>331 일반 유튜브 애미 터진년들 ㅇㅇ (211.245) 25.06.18 265 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=331&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>302 일반 이틀에 한번 올려도되냐? ㅇㅇ (175.215) 25.05.05 216 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=302&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>301 일반 피드백 ㄱㄴ? [1] ㅇㅇ (211.196) 25.05.04 212 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=301&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>296 일반 그냥 진짜 나같은 경우는 채널 새로파는게 맞는거 같음 [2] ㅇㅇ (103.226) 25.04.30 855 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=296&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>294 일반 시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임? [2] 유갤러 (14.35) 25.04.23 943 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>286 일반 왜 영상을 올려도 피드가 0임?? 유갤러 (110.13) 25.03.30 273 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=286&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>282 공유 피드백좀 부탁할게 ㅠㅠ [2] 유갤러 (211.234) 25.03.24 609 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=282&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-45-04-phase-visual">Physical time check: 20:45:04 phase=visual</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-알고리즘">DCInside 유튜브 쇼츠 검색: 알고리즘</h3>
+<ul>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 336 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>402 일반 형들.. 나 쇼츠하꼬인데 이거 무섭다 [3] 유갤러 (118.235) 25.11.15 1205 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=402&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>392 일반 연속 7개영상 노출수 0... [2] 유갤러 (14.47) 25.10.05 781 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=392&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>381 일반 쇼츠 시작한지 일주일 됨, 나도 드디어 알고리즘을 받았다 [2] 유갤러 (175.200) 25.09.14 1393 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=381&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>339 일반 이유좀 알려줘라... [1] 유갤러 (211.238) 25.07.02 348 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=339&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>274 일반 이 영상 퀄 어떤가요? 피드 박살나서 퀄 문제인지 궁금해서 올립니다 [4] church1728 (211.181) 25.03.17 908 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=274&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>147 일반 ㅈ같은 알고리즘 [2] hstommy24 24.02.23 459 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=147&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>102 일반 하도 양산형 많아서 계정 새로 파고 통계 내봄 [6] ㅇㅇ (118.221) 23.12.06 4531 19 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=102&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>4 일반 유튜브 쇼츠 문해력 [2] 데스파라 (220.71) 23.01.08 391 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=4&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-조회수">DCInside 유튜브 쇼츠 검색: 조회수</h3>
+<ul>
+<li>481 일반 &amp;lt;수익창출&amp;gt; 시켜드립니다. (자연 조회수 / AI,트래픽조작 NO!) 유갤러 (183.109) 05.14 23 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=481&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>458 일반 형들 뉴비 조회수노출 질문좀 ㅜㅜ [1] 유갤러 (14.37) 03.02 369 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=458&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>454 일반 형들 궁금한게 있는데 [1] 유갤러 (123.248) 02.26 236 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=454&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 336 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>444 일반 하시밯 쇼츠 세개올렸는데 조회수 다 200따리네 [3] ㅇㅇ (58.140) 02.16 303 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=444&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>430 일반 평소에 1~3만정도 꾸준히나오는 하꼬채널인데 [3] 유갤러 (124.54) 01.20 533 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=430&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>426 일반 롤 쇼츠 5일동안 10개 정도 올렸는데 조회수 10 미만 [2] 유갤러 (118.235) 01.17 291 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=426&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>425 일반 쇼츠 첫영상 올렸는데 이정도면 ㄱㅊ? [1] ㅇㅇ (171.224) 01.11 702 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=425&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>422 일반 업로드 한지 16시간 나 ㅈ된거아냐 [1] 유갤러 (121.167) 01.06 795 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=422&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-떡상">DCInside 유튜브 쇼츠 검색: 떡상</h3>
+<ul>
+<li>327 일반 2달만에 크갤러초보 (115.143) 25.06.09 439 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=327&amp;s_type=search_subject_memo&amp;s_keyword=떡상&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-피드">DCInside 유튜브 쇼츠 검색: 피드</h3>
+<ul>
+<li>408 일반 유용한 유튜브 관리 툴을 만들었습니다. [2] 유갤러 (211.196) 25.11.26 310 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=408&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>337 일반 쇼츠/릴스 댓글 링크 공유 귀찮을 때 이거 써라 [1] 유갤러 (116.41) 25.07.01 355 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=337&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>331 일반 유튜브 애미 터진년들 ㅇㅇ (211.245) 25.06.18 265 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=331&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>302 일반 이틀에 한번 올려도되냐? ㅇㅇ (175.215) 25.05.05 216 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=302&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>301 일반 피드백 ㄱㄴ? [1] ㅇㅇ (211.196) 25.05.04 212 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=301&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>296 일반 그냥 진짜 나같은 경우는 채널 새로파는게 맞는거 같음 [2] ㅇㅇ (103.226) 25.04.30 855 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=296&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>294 일반 시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임? [2] 유갤러 (14.35) 25.04.23 944 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>286 일반 왜 영상을 올려도 피드가 0임?? 유갤러 (110.13) 25.03.30 273 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=286&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>282 공유 피드백좀 부탁할게 ㅠㅠ [2] 유갤러 (211.234) 25.03.24 610 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=282&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-48-06-phase-visual">Physical time check: 20:48:06 phase=visual</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-알고리즘">DCInside 유튜브 쇼츠 검색: 알고리즘</h3>
+<ul>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 336 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>402 일반 형들.. 나 쇼츠하꼬인데 이거 무섭다 [3] 유갤러 (118.235) 25.11.15 1205 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=402&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>392 일반 연속 7개영상 노출수 0... [2] 유갤러 (14.47) 25.10.05 781 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=392&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>381 일반 쇼츠 시작한지 일주일 됨, 나도 드디어 알고리즘을 받았다 [2] 유갤러 (175.200) 25.09.14 1393 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=381&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>339 일반 이유좀 알려줘라... [1] 유갤러 (211.238) 25.07.02 348 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=339&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>274 일반 이 영상 퀄 어떤가요? 피드 박살나서 퀄 문제인지 궁금해서 올립니다 [4] church1728 (211.181) 25.03.17 908 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=274&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>147 일반 ㅈ같은 알고리즘 [2] hstommy24 24.02.23 459 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=147&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>102 일반 하도 양산형 많아서 계정 새로 파고 통계 내봄 [6] ㅇㅇ (118.221) 23.12.06 4531 19 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=102&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>4 일반 유튜브 쇼츠 문해력 [2] 데스파라 (220.71) 23.01.08 391 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=4&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-조회수">DCInside 유튜브 쇼츠 검색: 조회수</h3>
+<ul>
+<li>481 일반 &amp;lt;수익창출&amp;gt; 시켜드립니다. (자연 조회수 / AI,트래픽조작 NO!) 유갤러 (183.109) 05.14 23 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=481&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>458 일반 형들 뉴비 조회수노출 질문좀 ㅜㅜ [1] 유갤러 (14.37) 03.02 369 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=458&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>454 일반 형들 궁금한게 있는데 [1] 유갤러 (123.248) 02.26 236 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=454&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 336 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>444 일반 하시밯 쇼츠 세개올렸는데 조회수 다 200따리네 [3] ㅇㅇ (58.140) 02.16 303 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=444&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>430 일반 평소에 1~3만정도 꾸준히나오는 하꼬채널인데 [3] 유갤러 (124.54) 01.20 533 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=430&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>426 일반 롤 쇼츠 5일동안 10개 정도 올렸는데 조회수 10 미만 [2] 유갤러 (118.235) 01.17 291 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=426&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>425 일반 쇼츠 첫영상 올렸는데 이정도면 ㄱㅊ? [1] ㅇㅇ (171.224) 01.11 702 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=425&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>422 일반 업로드 한지 16시간 나 ㅈ된거아냐 [1] 유갤러 (121.167) 01.06 795 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=422&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-떡상">DCInside 유튜브 쇼츠 검색: 떡상</h3>
+<ul>
+<li>327 일반 2달만에 크갤러초보 (115.143) 25.06.09 439 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=327&amp;s_type=search_subject_memo&amp;s_keyword=떡상&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-피드">DCInside 유튜브 쇼츠 검색: 피드</h3>
+<ul>
+<li>408 일반 유용한 유튜브 관리 툴을 만들었습니다. [2] 유갤러 (211.196) 25.11.26 310 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=408&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>337 일반 쇼츠/릴스 댓글 링크 공유 귀찮을 때 이거 써라 [1] 유갤러 (116.41) 25.07.01 355 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=337&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>331 일반 유튜브 애미 터진년들 ㅇㅇ (211.245) 25.06.18 265 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=331&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>302 일반 이틀에 한번 올려도되냐? ㅇㅇ (175.215) 25.05.05 216 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=302&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>301 일반 피드백 ㄱㄴ? [1] ㅇㅇ (211.196) 25.05.04 212 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=301&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>296 일반 그냥 진짜 나같은 경우는 채널 새로파는게 맞는거 같음 [2] ㅇㅇ (103.226) 25.04.30 855 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=296&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>294 일반 시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임? [2] 유갤러 (14.35) 25.04.23 944 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>286 일반 왜 영상을 올려도 피드가 0임?? 유갤러 (110.13) 25.03.30 273 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=286&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>282 공유 피드백좀 부탁할게 ㅠㅠ [2] 유갤러 (211.234) 25.03.24 610 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=282&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-51-07-phase-visual">Physical time check: 20:51:07 phase=visual</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-알고리즘">DCInside 유튜브 쇼츠 검색: 알고리즘</h3>
+<ul>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 336 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>402 일반 형들.. 나 쇼츠하꼬인데 이거 무섭다 [3] 유갤러 (118.235) 25.11.15 1205 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=402&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>392 일반 연속 7개영상 노출수 0... [2] 유갤러 (14.47) 25.10.05 781 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=392&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>381 일반 쇼츠 시작한지 일주일 됨, 나도 드디어 알고리즘을 받았다 [2] 유갤러 (175.200) 25.09.14 1393 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=381&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>339 일반 이유좀 알려줘라... [1] 유갤러 (211.238) 25.07.02 348 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=339&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>274 일반 이 영상 퀄 어떤가요? 피드 박살나서 퀄 문제인지 궁금해서 올립니다 [4] church1728 (211.181) 25.03.17 908 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=274&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>147 일반 ㅈ같은 알고리즘 [2] hstommy24 24.02.23 459 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=147&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>102 일반 하도 양산형 많아서 계정 새로 파고 통계 내봄 [6] ㅇㅇ (118.221) 23.12.06 4531 19 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=102&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>4 일반 유튜브 쇼츠 문해력 [2] 데스파라 (220.71) 23.01.08 391 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=4&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-조회수">DCInside 유튜브 쇼츠 검색: 조회수</h3>
+<ul>
+<li>481 일반 &amp;lt;수익창출&amp;gt; 시켜드립니다. (자연 조회수 / AI,트래픽조작 NO!) 유갤러 (183.109) 05.14 23 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=481&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>458 일반 형들 뉴비 조회수노출 질문좀 ㅜㅜ [1] 유갤러 (14.37) 03.02 369 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=458&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>454 일반 형들 궁금한게 있는데 [1] 유갤러 (123.248) 02.26 236 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=454&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 336 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>444 일반 하시밯 쇼츠 세개올렸는데 조회수 다 200따리네 [3] ㅇㅇ (58.140) 02.16 303 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=444&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>430 일반 평소에 1~3만정도 꾸준히나오는 하꼬채널인데 [3] 유갤러 (124.54) 01.20 533 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=430&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>426 일반 롤 쇼츠 5일동안 10개 정도 올렸는데 조회수 10 미만 [2] 유갤러 (118.235) 01.17 291 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=426&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>425 일반 쇼츠 첫영상 올렸는데 이정도면 ㄱㅊ? [1] ㅇㅇ (171.224) 01.11 702 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=425&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>422 일반 업로드 한지 16시간 나 ㅈ된거아냐 [1] 유갤러 (121.167) 01.06 795 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=422&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-떡상">DCInside 유튜브 쇼츠 검색: 떡상</h3>
+<ul>
+<li>327 일반 2달만에 크갤러초보 (115.143) 25.06.09 439 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=327&amp;s_type=search_subject_memo&amp;s_keyword=떡상&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-피드">DCInside 유튜브 쇼츠 검색: 피드</h3>
+<ul>
+<li>408 일반 유용한 유튜브 관리 툴을 만들었습니다. [2] 유갤러 (211.196) 25.11.26 310 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=408&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>337 일반 쇼츠/릴스 댓글 링크 공유 귀찮을 때 이거 써라 [1] 유갤러 (116.41) 25.07.01 355 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=337&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>331 일반 유튜브 애미 터진년들 ㅇㅇ (211.245) 25.06.18 265 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=331&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>302 일반 이틀에 한번 올려도되냐? ㅇㅇ (175.215) 25.05.05 216 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=302&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>301 일반 피드백 ㄱㄴ? [1] ㅇㅇ (211.196) 25.05.04 212 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=301&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>296 일반 그냥 진짜 나같은 경우는 채널 새로파는게 맞는거 같음 [2] ㅇㅇ (103.226) 25.04.30 855 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=296&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>294 일반 시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임? [2] 유갤러 (14.35) 25.04.23 944 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>286 일반 왜 영상을 올려도 피드가 0임?? 유갤러 (110.13) 25.03.30 273 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=286&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>282 공유 피드백좀 부탁할게 ㅠㅠ [2] 유갤러 (211.234) 25.03.24 610 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=282&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-54-08-phase-visual">Physical time check: 20:54:08 phase=visual</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-알고리즘">DCInside 유튜브 쇼츠 검색: 알고리즘</h3>
+<ul>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 336 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>402 일반 형들.. 나 쇼츠하꼬인데 이거 무섭다 [3] 유갤러 (118.235) 25.11.15 1205 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=402&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>392 일반 연속 7개영상 노출수 0... [2] 유갤러 (14.47) 25.10.05 781 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=392&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>381 일반 쇼츠 시작한지 일주일 됨, 나도 드디어 알고리즘을 받았다 [2] 유갤러 (175.200) 25.09.14 1393 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=381&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>339 일반 이유좀 알려줘라... [1] 유갤러 (211.238) 25.07.02 348 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=339&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>274 일반 이 영상 퀄 어떤가요? 피드 박살나서 퀄 문제인지 궁금해서 올립니다 [4] church1728 (211.181) 25.03.17 908 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=274&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>147 일반 ㅈ같은 알고리즘 [2] hstommy24 24.02.23 459 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=147&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>102 일반 하도 양산형 많아서 계정 새로 파고 통계 내봄 [6] ㅇㅇ (118.221) 23.12.06 4531 19 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=102&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>4 일반 유튜브 쇼츠 문해력 [2] 데스파라 (220.71) 23.01.08 391 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=4&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-조회수">DCInside 유튜브 쇼츠 검색: 조회수</h3>
+<ul>
+<li>481 일반 &amp;lt;수익창출&amp;gt; 시켜드립니다. (자연 조회수 / AI,트래픽조작 NO!) 유갤러 (183.109) 05.14 23 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=481&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>458 일반 형들 뉴비 조회수노출 질문좀 ㅜㅜ [1] 유갤러 (14.37) 03.02 369 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=458&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>454 일반 형들 궁금한게 있는데 [1] 유갤러 (123.248) 02.26 236 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=454&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 336 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>444 일반 하시밯 쇼츠 세개올렸는데 조회수 다 200따리네 [3] ㅇㅇ (58.140) 02.16 303 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=444&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>430 일반 평소에 1~3만정도 꾸준히나오는 하꼬채널인데 [3] 유갤러 (124.54) 01.20 533 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=430&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>426 일반 롤 쇼츠 5일동안 10개 정도 올렸는데 조회수 10 미만 [2] 유갤러 (118.235) 01.17 291 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=426&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>425 일반 쇼츠 첫영상 올렸는데 이정도면 ㄱㅊ? [1] ㅇㅇ (171.224) 01.11 702 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=425&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>422 일반 업로드 한지 16시간 나 ㅈ된거아냐 [1] 유갤러 (121.167) 01.06 795 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=422&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-떡상">DCInside 유튜브 쇼츠 검색: 떡상</h3>
+<ul>
+<li>327 일반 2달만에 크갤러초보 (115.143) 25.06.09 439 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=327&amp;s_type=search_subject_memo&amp;s_keyword=떡상&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-피드">DCInside 유튜브 쇼츠 검색: 피드</h3>
+<ul>
+<li>408 일반 유용한 유튜브 관리 툴을 만들었습니다. [2] 유갤러 (211.196) 25.11.26 310 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=408&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>337 일반 쇼츠/릴스 댓글 링크 공유 귀찮을 때 이거 써라 [1] 유갤러 (116.41) 25.07.01 355 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=337&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>331 일반 유튜브 애미 터진년들 ㅇㅇ (211.245) 25.06.18 265 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=331&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>302 일반 이틀에 한번 올려도되냐? ㅇㅇ (175.215) 25.05.05 216 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=302&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>301 일반 피드백 ㄱㄴ? [1] ㅇㅇ (211.196) 25.05.04 212 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=301&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>296 일반 그냥 진짜 나같은 경우는 채널 새로파는게 맞는거 같음 [2] ㅇㅇ (103.226) 25.04.30 855 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=296&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>294 일반 시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임? [2] 유갤러 (14.35) 25.04.23 944 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>286 일반 왜 영상을 올려도 피드가 0임?? 유갤러 (110.13) 25.03.30 273 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=286&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>282 공유 피드백좀 부탁할게 ㅠㅠ [2] 유갤러 (211.234) 25.03.24 610 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=282&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+</ul>
+
+<h2 id="Physical-time-check-20-57-09-phase-visual">Physical time check: 20:57:09 phase=visual</h2>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-알고리즘">DCInside 유튜브 쇼츠 검색: 알고리즘</h3>
+<ul>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 336 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>402 일반 형들.. 나 쇼츠하꼬인데 이거 무섭다 [3] 유갤러 (118.235) 25.11.15 1205 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=402&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>392 일반 연속 7개영상 노출수 0... [2] 유갤러 (14.47) 25.10.05 781 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=392&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>381 일반 쇼츠 시작한지 일주일 됨, 나도 드디어 알고리즘을 받았다 [2] 유갤러 (175.200) 25.09.14 1393 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=381&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>339 일반 이유좀 알려줘라... [1] 유갤러 (211.238) 25.07.02 348 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=339&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>274 일반 이 영상 퀄 어떤가요? 피드 박살나서 퀄 문제인지 궁금해서 올립니다 [4] church1728 (211.181) 25.03.17 908 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=274&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>147 일반 ㅈ같은 알고리즘 [2] hstommy24 24.02.23 459 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=147&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>102 일반 하도 양산형 많아서 계정 새로 파고 통계 내봄 [6] ㅇㅇ (118.221) 23.12.06 4531 19 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=102&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+<li>4 일반 유튜브 쇼츠 문해력 [2] 데스파라 (220.71) 23.01.08 391 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=4&amp;s_type=search_subject_memo&amp;s_keyword=알고리즘&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-조회수">DCInside 유튜브 쇼츠 검색: 조회수</h3>
+<ul>
+<li>481 일반 &amp;lt;수익창출&amp;gt; 시켜드립니다. (자연 조회수 / AI,트래픽조작 NO!) 유갤러 (183.109) 05.14 23 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=481&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>458 일반 형들 뉴비 조회수노출 질문좀 ㅜㅜ [1] 유갤러 (14.37) 03.02 369 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=458&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>454 일반 형들 궁금한게 있는데 [1] 유갤러 (123.248) 02.26 236 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=454&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>450 일반 의미없이 대충 만들수록 조회수가 높아 [2] ㅇㅇ 02.22 336 2 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=450&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>444 일반 하시밯 쇼츠 세개올렸는데 조회수 다 200따리네 [3] ㅇㅇ (58.140) 02.16 303 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=444&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>441 일반 조회수가 나락인데 이거 맞냐 [1] 유갤러 (1.249) 02.13 264 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=441&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>430 일반 평소에 1~3만정도 꾸준히나오는 하꼬채널인데 [3] 유갤러 (124.54) 01.20 533 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=430&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>426 일반 롤 쇼츠 5일동안 10개 정도 올렸는데 조회수 10 미만 [2] 유갤러 (118.235) 01.17 291 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=426&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>425 일반 쇼츠 첫영상 올렸는데 이정도면 ㄱㅊ? [1] ㅇㅇ (171.224) 01.11 702 1 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=425&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+<li>422 일반 업로드 한지 16시간 나 ㅈ된거아냐 [1] 유갤러 (121.167) 01.06 795 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=422&amp;s_type=search_subject_memo&amp;s_keyword=조회수&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-떡상">DCInside 유튜브 쇼츠 검색: 떡상</h3>
+<ul>
+<li>327 일반 2달만에 크갤러초보 (115.143) 25.06.09 439 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=327&amp;s_type=search_subject_memo&amp;s_keyword=떡상&amp;page=1</li>
+</ul>
+
+<h3 id="DCInside-유튜브-쇼츠-검색-피드">DCInside 유튜브 쇼츠 검색: 피드</h3>
+<ul>
+<li>408 일반 유용한 유튜브 관리 툴을 만들었습니다. [2] 유갤러 (211.196) 25.11.26 310 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=408&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>337 일반 쇼츠/릴스 댓글 링크 공유 귀찮을 때 이거 써라 [1] 유갤러 (116.41) 25.07.01 355 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=337&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>331 일반 유튜브 애미 터진년들 ㅇㅇ (211.245) 25.06.18 265 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=331&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>302 일반 이틀에 한번 올려도되냐? ㅇㅇ (175.215) 25.05.05 216 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=302&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>301 일반 피드백 ㄱㄴ? [1] ㅇㅇ (211.196) 25.05.04 212 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=301&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>296 일반 그냥 진짜 나같은 경우는 채널 새로파는게 맞는거 같음 [2] ㅇㅇ (103.226) 25.04.30 855 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=296&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>294 일반 시청자 참여율이 77퍼인데 조회수가 왤케 ㅈ박은거임? [2] 유갤러 (14.35) 25.04.23 944 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=294&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>286 일반 왜 영상을 올려도 피드가 0임?? 유갤러 (110.13) 25.03.30 273 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=286&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>282 공유 피드백좀 부탁할게 ㅠㅠ [2] 유갤러 (211.234) 25.03.24 610 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=282&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+<li>281 일반 피드백좀 해주라. [1] 유갤러 (211.234) 25.03.24 234 0 https://gall.dcinside.com/mgallery/board/view/?id=shorts&amp;no=281&amp;s_type=search_subject_memo&amp;s_keyword=피드&amp;page=1</li>
+</ul></div>
+</section>
+<section class="source-block" id="src-9">
+  <div class="source-head"><span>초기 노트 전체</span><a href="data/notes.md">원문 파일</a></div>
+  <div class="source-body">
+<h2 id="20-19-35-fun-query">20:19:35 fun query</h2>
+<ul>
+<li>Query: site:reddit.com why is something funny novelty incongruity surprise dopamine attention</li>
+<li>site:reddit.com why is something funny novelty incongruity surprise dopamine attention — https://duckduckgo.com/</li>
+</ul>
+
+<h3 id="Source-excerpt-site-reddit-com-why-is-something-funny-novelty-incongruity-surpri">Source excerpt: site:reddit.com why is something funny novelty incongruity surprise dopamine attention</h3>
+<p>URL: https://duckduckgo.com/</p>
+<p>DuckDuckGo - Protection. Privacy. Peace of mind. &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;120x120&quot; href=&quot;/static-assets/favicons/DDG-iOS-icon_120x120.png&quot;/</p>
+
+<h2 id="20-20-51-fun-query">20:20:51 fun query</h2>
+<ul>
+<li>Query: site:reddit.com/r/psychology humor incongruity theory benign violation curiosity novelty</li>
+<li>site:reddit.com/r/psychology humor incongruity theory benign violation curiosity novelty — https://duckduckgo.com/</li>
+</ul>
+
+<h2 id="20-22-07-fun-query">20:22:07 fun query</h2>
+<ul>
+<li>Query: site:reddit.com/r/gamedesign fun principles challenge mastery surprise feedback loop</li>
+<li>site:reddit.com/r/gamedesign fun principles challenge mastery surprise feedback loop — https://duckduckgo.com/</li>
+</ul></div>
+</section>
+<section class="source-block" id="src-10">
+  <div class="source-head"><span>목표/운영 규칙 원문</span><a href="data/GOAL.md">원문 파일</a></div>
+  <div class="source-body"><h1 id="GOAL-재미-원칙-숏폼-시각-하이재킹-리서치">GOAL: 재미 원칙 + 숏폼 시각 하이재킹 리서치</h1>
+
+<h2 id="Deadlines">Deadlines</h2>
+<ul>
+<li>Phase 1 deadline: 2026-05-16 20:30:00 Asia/Seoul</li>
+<li>Phase 2 deadline: 2026-05-16 21:00:00 Asia/Seoul</li>
+</ul>
+
+<h2 id="Rule">Rule</h2>
+<ul>
+<li>Every work cycle must check physical current time from system clock before deciding what to do.</li>
+<li>Before 20:30: research only human fun/amusement/interest principles.</li>
+<li>From 20:30 to 21:00: research short-form visual hijacking / 1-second scroll stop factors.</li>
+<li>After 21:00: synthesize and report.</li>
+</ul>
+
+<h2 id="Source-Priority">Source Priority</h2>
+<ul>
+<li>Active communities first: DCInside, Reddit, X/Twitter-visible pages where accessible.</li>
+<li>Also use credible psychology/neuroscience/game-design/marketing sources to ground claims.</li>
+</ul>
+
+<h2 id="Output-Shape">Output Shape</h2>
+<ul>
+<li>Korean report.</li>
+<li>Directly usable for 5–30s short-form/video ideation.</li>
+<li>Include principles, mechanisms, examples, checklist, and 20 pattern ideas.</li>
+</ul></div>
+</section></section>
+<section><div class="kicker">raw files</div><h2 class="section-title">첨부 원자료</h2><ul class="raw"><li><a href="data/GOAL.md">data/GOAL.md</a></li>
+<li><a href="data/community-notes.md">data/community-notes.md</a></li>
+<li><a href="data/community-state.json">data/community-state.json</a></li>
+<li><a href="data/dc-post-excerpts.md">data/dc-post-excerpts.md</a></li>
+<li><a href="data/dc-synthesis.md">data/dc-synthesis.md</a></li>
+<li><a href="data/final-report.md">data/final-report.md</a></li>
+<li><a href="data/loop.log">data/loop.log</a></li>
+<li><a href="data/notes.md">data/notes.md</a></li>
+<li><a href="data/raw/001-1-fun.txt">data/raw/001-1-fun.txt</a></li>
+<li><a href="data/raw/001-fun-search.html">data/raw/001-fun-search.html</a></li>
+<li><a href="data/raw/002-fun-search.html">data/raw/002-fun-search.html</a></li>
+<li><a href="data/raw/003-fun-search.html">data/raw/003-fun-search.html</a></li>
+<li><a href="data/reddit-browser-notes.md">data/reddit-browser-notes.md</a></li>
+<li><a href="data/report-draft.md">data/report-draft.md</a></li>
+<li><a href="data/state.json">data/state.json</a></li>
+<li><a href="data/theory-notes.md">data/theory-notes.md</a></li>
+<li><a href="data/visual-frame-notes.md">data/visual-frame-notes.md</a></li>
+<li><a href="data/x-notes.md">data/x-notes.md</a></li></ul></section>
+<div class="footer">Built as a mobile-first GitHub Pages report. All visible report/source markdown is included above.</div>
+</div>
+</body>
+</html>
