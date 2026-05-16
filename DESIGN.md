@@ -1,26 +1,21 @@
-# Mobile Report Visual Identity
+# Mobile Strategy Report Design
 
-## Style Prompt
-A 9:16 mobile-first visual intelligence report: dark editorial canvas, electric orange evidence accents, glassy cards, dense but readable Korean typography, source-note fidelity, and sticky navigation. It should feel like a premium strategy briefing deck converted into a scroll-native mobile site.
+## Mood
+검은 배경 위에 오렌지 포인트를 쓰는 모바일 전용 전략 보고서. 광고 기획자가 이동 중에 바로 읽고 판단할 수 있는 카드형 프레젠테이션.
 
 ## Colors
-- Background: #090807
-- Surface: #14110f
-- Elevated card: #1f1914
-- Accent orange: #ff6a00
-- Accent gold: #ffd166
-- Text: #fff7ed
-- Muted text: #b9a99a
-- Evidence blue: #7dd3fc
-- Danger red: #fb7185
+- 배경: #090807
+- 카드: #17110d
+- 강조 오렌지: #ff6a00
+- 보조 골드: #ffd166
+- 본문: #fff7ed
+- 보조 텍스트: #b9a99a
 
 ## Typography
-- Korean/system sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif
-- Numeric/mono: "SF Mono", ui-monospace, Menlo, monospace
+- 한국어 시스템 산세리프
+- 숫자는 모노스페이스
 
-## What NOT to Do
-- No desktop-first wide layout.
-- No tiny gray legal-text slabs as primary content.
-- No generic bootstrap blue.
-- No hiding source notes behind inaccessible downloads only.
-- No summary-only treatment; full notes must remain visible in appendices.
+## 금지
+- 출처/URL/원문 링크 노출 금지
+- 데스크톱 기준 레이아웃 금지
+- 긴 회색 안내문처럼 보이는 디자인 금지

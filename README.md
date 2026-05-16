@@ -1,3 +1,3 @@
-# 재미 원칙 × 숏폼 시각 하이재킹 리서치
+# 재미 원칙 × 숏폼 시각 하이재킹
 
-Mobile-first complete report generated from OpenClaw research notes.
+모바일 전용 전략 보고서. 공개 페이지에는 출처/원문 링크를 넣지 않고, 핵심 관찰과 실행 지침만 사람이 읽기 쉬운 말로 정리했습니다.
